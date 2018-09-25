@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Components/Header/header";
 import KeyVisual from "./Components/KeyVisual/keyVisual";
 import News from "./Components/News/news";
+import Product from"./Components/Product/product";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
             <Header />
             <KeyVisual />
             <News />
+            <Product />
         </div>
     )
   }
