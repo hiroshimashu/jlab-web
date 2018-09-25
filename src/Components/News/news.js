@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from "../Common/sectionTitle";
 import Triangle from "../../static/background_triangle.svg";
+import Partner from "./partner";
 
 const News = () => {
     return (
@@ -41,22 +42,26 @@ const News = () => {
             <p className = "company-main" style = {{ 
                position: "absolute",
                color:"#ABE1FA", 
-               fontSize: "13px" ,
+               fontSize: "13px",
+               width: "540px",
                top: "445.213px", 
                left: "133.817px",
                letterSpacing: "2.64px",  
                lineHeight: "21pt",
                fontWeight: "lighter",
+                textAlign: "justify",
+
             }}>
-            当社はアイデアと技術で常に一歩先の驚きと感動を提供できるサービスや製品<br/>
-            の基盤づくりを目指している会社です。ソフトウェアの重要性が高まっている情<br/>
-            報家電において、幅広い技術とアイデアが求められています。当社では常に<br/>
-            高い技術と創造力を高め、情報家電分野におけるソフトウェアのニーズに応えて<br/>
-            きました。STB、Android TV、スマーフォンといったデバイスへ、マルチ<br/>
-            デバイス時代に必要なソフトウェア技術を提供します。常に斬新な自社プロダ<br/>
-            クトを企画・開発しており、培われたアイデアと技術、開発環境を様々な形で<br/>
+            当社はアイデアと技術で常に一歩先の驚きと感動を提供できるサービスや製品
+            の基盤づくりを目指している会社です。ソフトウェアの重要性が高まっている情
+            報家電において、幅広い技術とアイデアが求められています。当社では常に
+            高い技術と創造力を高め、情報家電分野におけるソフトウェアのニーズに応えて
+            きました。STB、Android TV、スマーフォンといったデバイスへ、マルチ
+            デバイス時代に必要なソフトウェア技術を提供します。常に斬新な自社プロダ
+            クトを企画・開発しており、培われたアイデアと技術、開発環境を様々な形で
             提供しています。
             </p>
+            <Partner />
         </section>
     )
 }
