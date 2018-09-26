@@ -30,8 +30,13 @@ const Info = () => {
                     榎本淳也
                 </p>
             </div>
-            <div>
-                <br />
+            <div　className="capital" style = {{display:"flex"}}>
+                <p>
+                   資本金
+                </p>
+                <p　style = {{marginLeft:"32.305px"}}>
+                    1000万円
+                </p>
             </div>
             <div className="address">
                 <p>
