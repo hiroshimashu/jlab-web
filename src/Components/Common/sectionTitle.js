@@ -16,9 +16,11 @@ const styles = {
         fontSize: "31px",
         color: "#74CEE2",
         left: "50%",
-        letterSpacing:"3.19pt",
+        letterSpacing: "3.19pt",
         transform: "translateX(-50%)"
+
     }
 }
+
 
 export default SectionTitle;

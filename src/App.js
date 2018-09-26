@@ -3,6 +3,9 @@ import Header from "./Components/Header/header";
 import KeyVisual from "./Components/KeyVisual/keyVisual";
 import News from "./Components/News/news";
 import Product from"./Components/Product/product";
+import Solution from  "./Components/Solution/solution";
+import Contact from "./Components/Contact/contact";
+import Footer from "./Components/Common/footer";
 
 class App extends Component {
   render() {
@@ -12,6 +15,9 @@ class App extends Component {
             <KeyVisual />
             <News />
             <Product />
+            <Solution />
+            <Contact />
+            <Footer />
         </div>
     )
   }

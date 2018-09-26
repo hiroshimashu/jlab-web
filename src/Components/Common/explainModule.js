@@ -3,7 +3,7 @@ import React from "react";
 const ExplainModule = (props) => {
     return (
         <div className="explain-wrapper" style = {{position: "absolute", top: `${props.top}`, left:`${props.left}`, display: "flex",}}>
-            <img style = {props.imgStyle} src = {props.imgSrc} />
+            <img style = {props.imgStyle} src = {props.imgSrc} alt = "explain" />
             <div>
                 <p style = { props.titleStyle } className = "explain-title">
                     {props.title}
