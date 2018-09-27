@@ -6,7 +6,7 @@ import demo from "../../static/keyvisual_movie.mp4";
 
 const RouteZDetail = () => {
     return (
-        <section className="routez-detail" style = {{ position: "relative", marginTop: "139.361px"}}>
+        <section className="routez-detail" style = {{ position: "relative", marginTop: "139.361px", height: "1691.769px"}}>
             <p style = { styles.explainTitle }>
                 「RouteZ」とは?
             </p>
@@ -93,6 +93,7 @@ const styles = {
         lineHeight : "30px",
         letterSpacing : "2.17px",
         left: "50%",
+        textAlign: "center",
         transform: "translateX(-50%)",
         fontWeight: "lighter"
     },
