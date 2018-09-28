@@ -15,7 +15,10 @@ class App extends Component {
             <Product />
             <Solution />
             <Contact />
-            <Footer />
+            <Footer
+                height = "301.76px"
+                top = "215.473px"
+            />
         </div>
     )
   }

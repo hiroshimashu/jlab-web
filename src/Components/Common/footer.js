@@ -1,19 +1,19 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <footer className = "" style = {{
+        <footer className = "footer" style = {{
             fontSize: "12px", 
             letterSpacing : "0.96pt",
             color : "#FFFFFF",
             fontWeight: "lighter",
             width: "100%",
-            height: "301.76px",
+            height: `${props.height}`,
             position: "relative"
         }}>
             <p style = {{
                 position: "absolute",
-                top: "215.473px",
+                top: `${props.top}`,
                 left: "50%",
                 transform:"translateX(-50%)"
             }}>

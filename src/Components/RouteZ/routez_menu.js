@@ -1,6 +1,8 @@
 import React from "react";
 import ZwaveCloud from "./zwaveCloud";
 import ZwavePhone from "./zwaveSmartphone";
+import ZwaveHome from "./zwaveHome";
+import ZwaveDevice from "./zwaveDevice";
 
 const RoutezMenu = () => {
     return (
@@ -10,6 +12,8 @@ const RoutezMenu = () => {
             </p>
             <ZwaveCloud />
             <ZwavePhone />
+            <ZwaveHome />
+            <ZwaveDevice />
         </section>
     )
 }

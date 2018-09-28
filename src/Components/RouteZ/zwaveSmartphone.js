@@ -21,7 +21,7 @@ const ZwavePhone = () => {
                 用ソフトウェアです。
             </p>
         </div>
-         <div classNmae = "phone-explain" style = { styles.explain }>
+         <div className = "phone-explain" style = { styles.explain }>
              <div style = { styles.explain1Wrapper }>
                  <p　style = {styles.explain1Title}>
                      SDK型
