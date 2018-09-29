@@ -24,3 +24,19 @@ body {
 p {
   margin: 0;
 }
+
+th, td {
+  border: 1px solid #74CEE2;
+  color:#ffffff;
+  font-weight: lighter;
+  letter-spacing: 0.248em;
+  font-size: 11px;
+  text-align: center;
+}
+
+
+.col-2 {
+}
+.col-3 {
+  width: 298.333px;
+}

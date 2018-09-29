@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./Components/Header/header";
 import App from "./App";
 import RouteZ from "./Components/RouteZ/routeZ";
+import LightBulb from "./Components/LightBulb/lightBulb";
+import Recruit from "./Components/Recruit/recruit";
 
 class Main extends Component {
     render() {
@@ -12,6 +14,8 @@ class Main extends Component {
                     <Header />
                     <Route exact path="/" component={ App } />
                     <Route path="/routez" component={ RouteZ } />
+                    <Route path="/led" component={ LightBulb } />
+                    <Route path="/recruit" component={ Recruit } />
                 </div>
             </Router>
         )
