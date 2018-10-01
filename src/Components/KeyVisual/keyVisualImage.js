@@ -1,10 +1,10 @@
 import React from "react";
-import keyVisualImage from "../../static/key_visual.png";
+import keyVisualVideo from "../../static/keyvisual_movie.mp4";
 
 const KeyVisualImage = () => {
     return (
         <div className = "key-visual-image-wrapper">
-            <img className="key-visual-image" src = { keyVisualImage } alt ="key-visual" style = {styles.keyVisualImage}/>
+            <video className="key-visual-image" alt ="key-visual"  src = {keyVisualVideo} autoPlay loop muted style = {styles.keyVisualImage} />
         </div>
     )
 }

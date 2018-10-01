@@ -3,16 +3,23 @@ import jsonInfo from "../../static/jobs_info.svg";
 
 const Recruit = () => {
     return (
-        <section className="recruit-wrapper" style = {{position: "relative", marginTop: "137.775px"}}>
-            <div>
-                Recruit
-            </div>
-            <div>
-                <div style = { styles.jos }>
-                    <div>
+        <section className="recruit-wrapper" style = {{
+            position: "relative",
+            marginTop: "149.648px",
+            width:"100%",
+            height: "1300.489px",
+        }}>
+            <div className="content-wrapper" style = {{
+                marginLeft:"28.17%",
+            }}>
+                <div style = { styles.recruitTitle }>
+                    Recruit
+                </div>
+                <div style = { styles.jobsWrapper }>
+                    <p style = { styles.jobsTitle }>
                         募集職種
-                    </div>
-                    <div>
+                    </p>
+                    <div style = { styles.jobs }>
                         <li>
                             Androidエンジニア
                         </li>
@@ -27,70 +34,246 @@ const Recruit = () => {
                         </li>
                     </div>
                 </div>
-                <div style = { styles.joRequirement }>
-                    <div>
-                        必要な経験・スキル
+                    <div style = { styles.jobRequirementWrapper }>
+                        <div style = { styles.jobRequirementTitle }>
+                            必要な経験・スキル
+                        </div>
+                        <div style = { styles.jobRequirement }>
+                            <li>
+                                Androidアプリ開発経験
+                            </li>
+                            <li>
+                                組み込みLinux開発経
+                            </li>
+                            <li>
+                                Java、C/C++、C#、Python（すべてを網羅していなくても可)
+                            </li>
+                            <li>
+                                プロジェクトマネージメントの2年以上の経験(経験者優遇)
+                            </li>
+                        </div>
                     </div>
-                    <div>
-                        <li>
-                            Androidアプリ開発経験
-                        </li>
-                        <li>
-                            組み込みLinux開発経験
-                        </li>
-                        <li>
-                            Java、C/C++、C#、Python（すべてを網羅していなくても可)
-                        </li>
-                        <li>
-                            プロジェクトマネージメントの2年以上の経験(経験者優遇)
-                        </li>
+                    <div style = { styles.salarytWrapper }>
+                        <div style = { styles.salaryTitle}>
+
+                            給与
+                        </div>
+                        <div style = { styles.salary }>
+                            経験・能力を重視し、応相談
+                        </div>
                     </div>
-                </div>
-                <div style = { styles.salary }>
-                    <div>
-                        給与
-                    </div>
-                    <div>
-                        経験・能力を重視し、応相談
-                    </div>
-                    <div>
-                        <div>
+                    <div style = { styles.workingHourWrapper }>
+                        <div style = { styles.workingHourTitle }>
                             勤務時間
                         </div>
-                        <div>
+                        <div style = { styles.workingHour}>
                             10:00 ~ 18:00
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div style = { styles.workingPlaceWrapper }>
+                        <div style = { styles.workingPlaceTitle }>
                             勤務地
                         </div>
-                        <div>
+                        <div style = { styles.workingPlace }>
                             東京
                         </div>
                     </div>
+                <div style = { styles.infoWrapper }>
+                    <img alt = "info" src = { jsonInfo } style = { styles.infoImg } />
+                    <div style = { styles.info }>
+                        <p style = { styles.infoText1 }>
+                            申し込みを希望される方は下記アドレスに
+                        </p>
+                        <p style = { styles.infoText2 }>
+                            履歴書と職務経歴書をお送りください。
+                        </p>
+                        <p style = { styles.infoText3 }>
+                            後日、弊社担当より連絡させていただきます。
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div style = { styles.info }>
-                <img alt = "info" src = { jsonInfo }/>
-                <div>
-
+                <div style = { styles.address }>
+                    info@jlabs.com
                 </div>
+                <footer style = { styles.footer }>
+                    Copyright © 2018 JLabs All Right Reserved.
+                </footer>
             </div>
-            <div style = { styles.address }>
-                info@jlabs.com
-            </div>
-            <footer>
-                Copyright © 2018 JLabs All Right Reserved.
-            </footer>
         </section>
     )
 }
 
 const styles = {
+    recruitTitle: {
+        marginLeft:"173.154px",
+        fontFamily: "Helvetica Neue, Arial",
+        fontWeight: "lighter",
+        fontSize: "24px",
+        color: "#74CEE2",
+        letterSpacing: "0.176em",
+    },
+    jobsWrapper: {
+        marginLeft: "57.746px",
+        marginTop: "111.065px",
+        display:"flex",
+    },
+    jobsTitle: {
+        height: "30px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "1.94px",
+        color : "#85A2BD",
+        display:"inline",
+    },
     jobs: {
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#ffffff",
+        marginLeft:"57.572px",
+    },
+    jobRequirementWrapper: {
+        marginTop: "63.634px",
+        display:"flex",
+    },
+    jobRequirementTitle: {
+        height: "30px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "0.8px",
+        color : "#85A2BD",
+    },
+    jobRequirement: {
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#ffffff",
+        marginLeft:"57.572px"
 
+    },
+    salarytWrapper: {
+        marginTop: "66.805px",
+        display:"flex",
+    },
+    salaryTitle: {
+        width:"105.22px",
+        height: "30px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "0.8px",
+        color : "#85A2BD",
+        textAlign: "right",
+    },
+    salary: {
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#ffffff",
+        marginLeft:"57.572px",
+        marginTop: "5px"
+
+    },
+    workingHourWrapper: {
+        marginTop: "64.523px",
+        display:"flex",
+    },
+    workingHourTitle: {
+        width:"105.22px",
+        height: "30px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "0.8px",
+        color : "#85A2BD",
+        textAlign: "right",
+    },
+    workingHour: {
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#ffffff",
+        marginLeft:"57.572px",
+        marginTop: "5px"
+    },
+    workingPlaceWrapper: {
+        marginTop: "64.523px",
+        display:"flex",
+    },
+    workingPlaceTitle: {
+        width:"105.22px",
+        height: "30px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "0.8px",
+        color : "#85A2BD",
+        textAlign: "right",
+    },
+    workingPlace: {
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#ffffff",
+        marginLeft:"57.572px",
+        marginTop: "5px"
+
+    },
+    infoWrapper: {
+        position: "relative",
+        marginTop:"64.656px",
+        marginLeft: "40.78px",
+        width: "355px",
+        height: "123.326px"
+    },
+    infoImg: {
+        position:"absolute",
+    },
+    info: {
+        position: "absolute",
+        left: "43.744px",
+        top: "17.318px",
+        fontSize : "11px",
+        fontWeight: "lighter",
+        lineHeight : "22px",
+        letterSpacing : "2.75px",
+        color : "#85A2BD",
+    },
+    infoText1: {
+        marginLeft:"12px",
+    },
+    infoText2: {
+        marginLeft:"18px",
+    },
+    address: {
+        fontFamily: "Helvetica Neue, Arial",
+        fontSize : "24px",
+        fontWeight: "lighter",
+        lineHeight : "30px",
+        letterSpacing : "4.22px",
+        color : "#ffffff",
+        marginTop: "29.092px",
+        marginLeft: "114.388px"
+
+    },
+    footer: {
+        display:"block",
+        marginTop: "288px",
+        marginLeft: "90.974px",
+        fontSize : "12px",
+        fontWeight: "lighter",
+        letterSpacing : "0.96px",
+        color : "#ffffff",
     }
+
+
 }
 
 export default Recruit;
