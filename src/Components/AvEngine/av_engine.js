@@ -1,8 +1,11 @@
 import React from "react";
+import HeaderDetail from "../Header/header_detail";
 import dawEngine from "../../static/daw_engine.svg";
 
 const AvEngine = () => {
     return (
+      <div>
+        <HeaderDetail />
         <section style = { styles.wrapper }>
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
@@ -32,6 +35,7 @@ const AvEngine = () => {
                 </p>
             </div>
         </section>
+      </div>
     )
 }
 
@@ -43,7 +47,10 @@ const styles = {
         height: "1031.867px"
     },
     contentWrapper: {
-        marginLeft: "23.82%",
+        marginLeft: "auto",
+        marginRight:"auto",
+        width: "545px",
+
     },
     drmTitle: {
         marginLeft:"29.673px",

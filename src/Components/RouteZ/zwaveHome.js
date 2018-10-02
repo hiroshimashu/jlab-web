@@ -1,27 +1,34 @@
 import React from "react";
 import home from "../../static/zwave_home.svg";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 
 const ZwaveHome = () => {
     return (
         <div className = "zwave-home-wrapper" style = { styles.homeWrapper }>
-            <img
+            <Fade bottom>
+                <img
                 src = { home }
                 className = "zwave-home"
                 style = { styles.homeImg}
                 alt = "zwave-phone"
-            />
-            <p style = { styles.zwaveHome }>
-                Z-Wave Home ゲートウェイ
-            </p>
-            <div style = { styles.zwaveHomeText }>
-                <p>
+                />
+                <p style = { styles.zwaveHome }>
+                    Z-Wave Home ゲートウェイ
+                </p>
+            </Fade>
+            <Fade bottom>
+                <div style = { styles.zwaveHomeText }>
+                    <p>
                     ゲートウェイデバイス上で動作するクライアントソフトウェアです。Z-Wave
-                </p>
-                <p>
+                    </p>
+                    <p>
                     対応のゲートウェイデバイスに組み込んで使用することが可能です。
-                </p>
-            </div>
-            <div className = "phone-explain" style = { styles.explain }>
+                    </p>
+                </div>
+            </Fade>
+            <Fade bottom>
+              <div className = "phone-explain" style = { styles.explain }>
                 <div style = { styles.explain1Wrapper }>
                     <p　style = {styles.explain1Title}>
                         Z-WaveクラウドGW連携
@@ -54,10 +61,15 @@ const ZwaveHome = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <button　style = { styles.gatewayButton }>
-                Z-Wave HOME ゲートウェイ Arena Box 詳細ページへ
-            </button>
+              </div>
+            </Fade>
+            <Fade bottom>
+                <Link to="/gateway">
+                    <button　style = { styles.gatewayButton }>
+                        Z-Wave HOME ゲートウェイ Arena Box 詳細ページへ
+                    </button>
+                </Link>
+            </Fade>
         </div>
     )
 }

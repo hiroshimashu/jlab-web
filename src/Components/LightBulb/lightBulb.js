@@ -1,10 +1,12 @@
 import React from "react";
-import lightBulb from "../../static/light_bulb_detail.png";
+import lightBulb from "../../static/lightbulb_detail.png";
 import　SectionTitleDetail from "../Common/sectionTitleDetail";
-import Footer from "../Common/footer";
+import HeaderDetail from "../../Components/Header/header_detail";
 
 const LightBulb = () => {
     return (
+        <div>
+        <HeaderDetail/>
         <section className="light-bulb-wrapper" style = {{position: "relative", marginTop: "137.775px", height:"1880.463px"}}>
             <SectionTitleDetail
                 title = "Z-Wave LED電球 Rocket Bulb"
@@ -647,8 +649,8 @@ const LightBulb = () => {
                     Copyright © 2018 JLabs All Right Reserved.
                 </p>
             </footer>
-
         </section>
+        </div>
     )
 }
 

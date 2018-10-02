@@ -1,23 +1,31 @@
 import React from "react";
 import zwaveCloud from "../../static/zwave_cloud.svg";
+import Fade from "react-reveal/Fade";
 
 const ZwaveCloud = () => {
     return (
         <div className = "zwave-cloud-wrapper" style = { styles.cloudWrapper }>
-            <img
-                src = { zwaveCloud }
-                className = "zwave-cloud"
-                style = { styles.zwaveCloud}
-                alt = "zwave-cloud"
-            />
-            <p style = { styles.zwaveCloudGw}>
-                Z-WaveクラウドGW
-            </p>
-            <p style = { styles.zwaveCloudGwText }>
-                Z-Waveデバイスからの様々な状態や値をリアルタイムに収集するための
-                サーバー用ソフトウェアです。
-            </p>
-            <div className="zwave-gw-explain" style = { styles.explain }>
+            <Fade bottom>
+                <img
+                    src = { zwaveCloud }
+                    className = "zwave-cloud"
+                    style = { styles.zwaveCloud}
+                    alt = "zwave-cloud"
+                />
+            </Fade>
+            <Fade bottom>
+                <p style = { styles.zwaveCloudGw}>
+                    Z-WaveクラウドGW
+                </p>
+            </Fade>
+            <Fade bottom>
+                <p style = { styles.zwaveCloudGwText }>
+                    Z-Waveデバイスからの様々な状態や値をリアルタイムに収集するための
+                    サーバー用ソフトウェアです。
+                </p>
+            </Fade>
+            <Fade bottom>
+              <div className="zwave-gw-explain" style = { styles.explain }>
                 <div style = { styles.explain1Wrapper }>
                     <p style = {styles.explain1Title}>
                         シナリオ自動制御
@@ -60,7 +68,8 @@ const ZwaveCloud = () => {
                         他のサーバーとの連携を行うことが出来ます。
                     </p>
                 </div>
-            </div>
+              </div>
+            </Fade>
         </div>
     )
 }
@@ -77,15 +86,12 @@ const styles = {
     zwaveCloud: {
         position: "absolute",
         width: "173.424px",
-        left: "50%",
-        transform:"translateX(-50%)"
+        left: "237.403px"
     },
     zwaveCloudGw: {
         position: "absolute",
-        width: "173.424px",
-        left: "50%",
+        left: "203.846px",
         top: "188.132px",
-        transform:"translateX(-50%)",
         width: "247.966px",
         fontSize : "24px",
         fontWeight:"lighter",
@@ -96,9 +102,8 @@ const styles = {
     zwaveCloudGwText: {
         position: "absolute",
         width: "513.489px",
-        left: "50%",
+        left: "69.871px",
         top: "241.565px",
-        transform:"translateX(-50%)",
         fontSize : "13px",
         fontWeight:"lighter",
         letterSpacing : "2.25px",

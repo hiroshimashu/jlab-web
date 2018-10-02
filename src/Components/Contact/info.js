@@ -1,7 +1,9 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 const Info = () => {
     return (
+    <Fade bottom>
         <div className = "info-wrapper" style = {styles.infoWrapper}>
             <div className="company-name"　style = {{display:"flex"}}>
                 <p>
@@ -52,6 +54,7 @@ const Info = () => {
                 </p>
             </div>
         </div>
+    </Fade>
     )
 }
 

@@ -1,11 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 
-const SectionTitle = (props) => {
-    return (
-        <div className = "section-title" style = {{...styles.SectionTitle, top: `${props.top}` }}>
-            {props.title}
-        </div>
-    )
+class SectionTitle extends Component {
+
+  componentDidMount() {
+      console.log(this.props.Ref);
+  }
+  render() {
+      return (
+          <Fade bottom>
+              <div className="section-title"
+                   style={{...styles.SectionTitle, top: `${this.props.top}`, left: `${this.props.left}`}}
+                   ref = { this.props.Ref }
+              >
+                  {this.props.title}
+              </div>
+          </Fade>
+      )
+  }
 }
 
 const styles = {
@@ -15,10 +27,7 @@ const styles = {
         fontWeight: "lighter",
         fontSize: "31px",
         color: "#74CEE2",
-        left: "50%",
         letterSpacing: "3.19pt",
-        transform: "translateX(-50%)"
-
     }
 }
 

@@ -1,9 +1,11 @@
 import React from "react";
 import logo from "../../static/facebook.png";
+import Fade from "react-reveal/Fade";
 
 const FacebookLogo = () => {
     return (
-        <a>
+        <Fade bottom>
+            <a>
             <img
                 className = "facebook-logo"
                 src = { logo }
@@ -16,7 +18,8 @@ const FacebookLogo = () => {
                     top: "906.841px"
                 }}
             />
-        </a>
+            </a>
+        </Fade>
     )
 }
 

@@ -2,11 +2,12 @@ import React from "react";
 import routezImgExplain from "../../static/RouteZ_Img_explanation.png";
 import routezExlain from "../../static/RouteZ_explain.png";
 import demo from "../../static/keyvisual_movie.mp4";
+import Fade from "react-reveal/Fade";
 
 
 const RouteZDetail = () => {
     return (
-        <section className="routez-detail" style = {{ position: "relative", marginTop: "139.361px", height: "1691.769px"}}>
+        <section className="routez-detail" style = {{ position: "relative", marginTop: "139.361px",width:"601px", height: "1691.769px", marginLeft: "auto", marginRight: "auto"}}>
             <p style = { styles.explainTitle }>
                 「RouteZ」とは?
             </p>
@@ -24,24 +25,32 @@ const RouteZDetail = () => {
                     開始することが可能です。
                 </p>
             </div>
-            <img src = { routezImgExplain } alt = "routez-img-explain" style = {styles.routezImg}/>
-            <img src = { routezExlain } alt = "routez-explain" style = {styles.routezExplain} />
-            <div　style = { styles.demoMovieTitle }>
-                <p  style = { styles.demoMovieTitleText1 }>
-                   RouteZ demo movie
-                </p>
-                <p style = { styles.demoMovieTitleText2 }>
-                    「From anywhere」
-                </p>
-            </div>
-            <video
+            <Fade bottom>
+                <img src = { routezImgExplain } alt = "routez-img-explain" style = {styles.routezImg}/>
+            </Fade>
+            <Fade bottom>
+                <img src = { routezExlain } alt = "routez-explain" style = {styles.routezExplain} />
+            </Fade>
+            <Fade bottom>
+                <div　style = { styles.demoMovieTitle }>
+                    <p  style = { styles.demoMovieTitleText1 }>
+                        RouteZ demo movie
+                    </p>
+                    <p style = { styles.demoMovieTitleText2 }>
+                        「From anywhere」
+                    </p>
+                </div>
+            </Fade>
+            <Fade bottom>
+                <video
                 controls
                 muted
                 style = { styles.demoMovie}
                 src = { demo }
-            >
+                >
 
-            </video>
+                </video>
+            </Fade>
         </section>
     )
 }
@@ -54,15 +63,13 @@ const styles = {
         letterSpacing : "4.22px",
         color : "#74CEE2",
         fontWeight: "lighter",
-        left: "50%",
-        transform: "translateX(-50%)"
+        left: "215.716px"
     },
     explainText: {
         position: "absolute",
         width: "516.327px",
         top:"60.966px",
-        left: "50%",
-        transform: "translateX(-50%)",
+        left: "51.403px",
         fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "28px",
@@ -73,17 +80,14 @@ const styles = {
     routezImg: {
         position: "absolute",
         width: "110.894px",
-        left: "50%",
         top: "293.223px",
-        transform: "translateX(-50%)",
+        left: "253.161px",
     },
     routezExplain: {
         position: "absolute",
         width: "582.801px",
         height: "656.506px",
-        left: "50%",
         top: "503.163px",
-        transform: "translateX(-50%)",
     },
     demoMovieTitle: {
         position: "absolute",
@@ -92,9 +96,8 @@ const styles = {
         fontSize : "18px",
         lineHeight : "30px",
         letterSpacing : "2.17px",
-        left: "50%",
         textAlign: "center",
-        transform: "translateX(-50%)",
+        left: "200.852px",
         fontWeight: "lighter"
     },
     demoMovieTitleText1: {
@@ -108,8 +111,7 @@ const styles = {
         width: "584.614px",
         height: "329.979px",
         top: "1361.191px",
-        left: "50%",
-        transform: "translateX(-50%)"
+        left:"16.301px",
     }
 
 

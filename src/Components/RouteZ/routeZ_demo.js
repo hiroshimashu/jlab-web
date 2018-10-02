@@ -1,9 +1,11 @@
 import React from "react";
 import demokit from "../../static/demo_kit.svg";
+import Fade from "react-reveal/Fade";
 
 const DemoKit = () => {
     return (
-        <section className =  "routez-demokit" style = { styles.demokit}>
+        <Fade bottom>
+          <section className =  "routez-demokit" style = { styles.demokit}>
             <p className = "routez-demokit-title" style = { styles.demokitTitle }>
                RouteZ デモキット
             </p>
@@ -35,7 +37,8 @@ const DemoKit = () => {
             <p style = { styles.email }>
                 info@jlabs.com
             </p>
-        </section>
+          </section>
+        </Fade>
     )
 }
 

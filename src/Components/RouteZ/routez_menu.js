@@ -3,13 +3,16 @@ import ZwaveCloud from "./zwaveCloud";
 import ZwavePhone from "./zwaveSmartphone";
 import ZwaveHome from "./zwaveHome";
 import ZwaveDevice from "./zwaveDevice";
+import Fade from "react-reveal/Fade";
 
 const RoutezMenu = () => {
     return (
         <section style = { styles.routezMenu} className = "routez-menu">
-            <p className="route-z-title" style = { styles.routezMenuTitle }>
-                RouteZ Menu
-            </p>
+            <Fade bottom>
+                <p className="route-z-title" style = { styles.routezMenuTitle }>
+                    RouteZ Menu
+                </p>
+            </Fade>
             <ZwaveCloud />
             <ZwavePhone />
             <ZwaveHome />
@@ -23,7 +26,9 @@ const styles = {
         position: "relative",
         marginTop: "175.559px",
         height: "2967.997px",
-        width: "100%"
+        width: "653.177px",
+        marginLeft: "auto",
+        marginRight: "auto"
     },
     routezMenuTitle: {
         position: "absolute",
@@ -32,13 +37,11 @@ const styles = {
         fontWeight:"lighter",
         letterSpacing : "4.19px",
         color : "#74CEE2",
-        left: "50%",
-        transform: "translateX(-50%)"
+        left: "215.269px"
     },
     zwaveCloud: {
         position: "absolute",
         width: "173.424px",
-
     }
 }
 

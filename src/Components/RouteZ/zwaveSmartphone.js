@@ -1,27 +1,35 @@
 import React from "react";
 import phone from "../../static/zwave-smartphone.png";
+import Fade from "react-reveal/Fade";
 
 const ZwavePhone = () => {
     return (
      <div className = "zwave-phone-wrapper" style = { styles.phoneWrapper }>
-         <img
-             src = { phone }
-             className = "zwave-phone"
-             style = { styles.phoneImg}
-             alt = "zwave-phone"
-         />
-         <p style = { styles.zwavePhone }>
-             Z-Wave スマートフォン
-        </p>
-        <div style = { styles.zwavePhoneText }>
-            <p>
-                Z-Waveデバイスの状態の確認やコントロールを遠隔で行うスマートフォン
-            </p>
-            <p>
-                用ソフトウェアです。
-            </p>
-        </div>
-         <div className = "phone-explain" style = { styles.explain }>
+         <Fade bottom>
+              <img
+                  src = { phone }
+                  className = "zwave-phone"
+                  style = { styles.phoneImg}
+                  alt = "zwave-phone"
+              />
+         </Fade>
+         <Fade bottom>
+             <p style = { styles.zwavePhone }>
+                 Z-Wave スマートフォン
+             </p>
+         </Fade>
+         <Fade bottom>
+            <div style = { styles.zwavePhoneText }>
+                <p>
+                    Z-Waveデバイスの状態の確認やコントロールを遠隔で行うスマートフォン
+                </p>
+                <p>
+                    用ソフトウェアです。
+                </p>
+            </div>
+         </Fade>
+         <Fade bottom>
+           <div className = "phone-explain" style = { styles.explain }>
              <div style = { styles.explain1Wrapper }>
                  <p　style = {styles.explain1Title}>
                      SDK型
@@ -60,7 +68,8 @@ const ZwavePhone = () => {
                      </p>
                  </div>
              </div>
-         </div>
+           </div>
+         </Fade>
      </div>
     )
 }

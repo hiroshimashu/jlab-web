@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }  from "react";
 import SectionTitle from "../Common/sectionTitle";
 import BackgroundCircle from "./backgroundCircle";
 import ExplainModule from "../Common/explainModule";
@@ -8,71 +8,81 @@ import LightBolb from "../../static/light_bolb.png";
 import engineImage from "../../static/engine-image.svg";
 import reverseMirror from "../../static/reverse_mirror.svg";
 
-const Product = () => {
-    return (
-        <section className = "product" style = {{position: "relative", width: "100%", height: "2299.873px"}}>
-            <SectionTitle
-                title = "Product"
-                top = "48px"
-            />
-            <BackgroundCircle />
-            <ExplainModule
-                top = "214.517px"
-                left = "calc((100% - 535.197px) / 2)"
-                imgStyle = { imgStyle.routeZ }
-                imgSrc = { routeZ }
-                titleStyle = { titleStyle.routeZ }
-                explainStyle = { explainStyle.routeZ }
-                buttonStyle = { buttonStyle.routeZ }
-                title = "RouteZ"
-                explain = "「RouteZ」は世界で最も普及しているスマートホーム向けIOT無線技術であるZ-Waveのデバイスを制御・管理するためのソフトウエア開発キット です。"
-            />
-            <ExplainModule
-                top = "540.722px"
-                left = "calc((100% - 535.197px) / 2)"
-                imgStyle = { imgStyle.gateway }
-                imgSrc = { arenaBox }
-                titleStyle = { titleStyle.gateway }
-                explainStyle = { explainStyle.gateway }
-                buttonStyle = { buttonStyle.routeZ }
-                title = "Z-Wave HOMEゲートウェイ Arena Box"
-                explain = "「Arena Box」はZ-Waveに対応したHOMEゲートウェイです。"
-            />
-            <ExplainModule
-                top = "942.039px"
-                left = "calc((100% - 535.197px) / 2)"
-                imgStyle = { imgStyle.bulb }
-                imgSrc = { LightBolb }
-                titleStyle = { titleStyle.bulb}
-                explainStyle = { explainStyle.bulb }
-                buttonStyle = { buttonStyle.bulb }
-                title = "Z-Wave LED電球 Rocket Bulb"
-                explain =  "「Rocket Bulb」は弊社開発による、Z-Wave対応のスマートLED電球です。"
-            />
-            <ExplainModule
-                top = "1291.228px"
-                left = "calc((100% - 535.197px) / 2)"
-                imgStyle = { imgStyle.engine }
-                imgSrc = { engineImage }
-                titleStyle = { titleStyle.engine}
-                explainStyle = { explainStyle.engine }
-                buttonStyle = { buttonStyle.engine }
-                title = "DRAM対応AVプレイヤーエンジン"
-                explain =  "スマートフォン端末やSTB等のプラットフォーム上で映像・音声の再生を行う為の基本コンポーネントを搭載したソフトウェアです。"
-            />
-            <ExplainModule
-                top = "1671.228px"
-                left = "calc((100% - 535.197px) / 2)"
-                imgStyle = { imgStyle.reverseMirror }
-                imgSrc = { reverseMirror }
-                titleStyle = { titleStyle.reverseMirror}
-                explainStyle = { explainStyle.reverseMirror }
-                buttonStyle = { buttonStyle.reverseMirror }
-                title = "逆ミラーリング"
-                explain =  "お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組みをご提供します。"
-            />
-        </section>
-    )
+class Product extends Component {
+    render() {
+        return (
+            <section className="product" style={{position: "relative", width: "100%", height: "2299.873px"}}>
+                <SectionTitle
+                    title="Product"
+                    top="48px"
+                    left="calc(50% - 63.4px)"
+                    Ref={this.props.productRef}
+                />
+                <BackgroundCircle />
+                <ExplainModule
+                    top="214.517px"
+                    left="calc((100% - 535.197px) / 2)"
+                    imgStyle={ imgStyle.routeZ }
+                    imgSrc={ routeZ }
+                    titleStyle={ titleStyle.routeZ }
+                    explainStyle={ explainStyle.routeZ }
+                    buttonStyle={ buttonStyle.routeZ }
+                    title="RouteZ"
+                    explain="「RouteZ」は世界で最も普及しているスマートホーム向けIOT無線技術であるZ-Waveのデバイスを制御・管理するためのソフトウエア開発キット です。"
+                    to = "/routez"
+                />
+                <ExplainModule
+                    top="540.722px"
+                    left="calc((100% - 535.197px) / 2)"
+                    imgStyle={ imgStyle.gateway }
+                    imgSrc={ arenaBox }
+                    titleStyle={ titleStyle.gateway }
+                    explainStyle={ explainStyle.gateway }
+                    buttonStyle={ buttonStyle.gateway }
+                    title="Z-Wave HOMEゲートウェイ Arena Box"
+                    explain="「Arena Box」はZ-Waveに対応したHOMEゲートウェイです。"
+                    to="/gateway"
+                />
+                <ExplainModule
+                    top="942.039px"
+                    left="calc((100% - 535.197px) / 2)"
+                    imgStyle={ imgStyle.bulb }
+                    imgSrc={ LightBolb }
+                    titleStyle={ titleStyle.bulb}
+                    explainStyle={ explainStyle.bulb }
+                    buttonStyle={ buttonStyle.bulb }
+                    title="Z-Wave LED電球 Rocket Bulb"
+                    explain="「Rocket Bulb」は弊社開発による、Z-Wave対応のスマートLED電球です。"
+                    to="/led"
+                />
+                <ExplainModule
+                    top="1291.228px"
+                    left="calc((100% - 535.197px) / 2)"
+                    imgStyle={ imgStyle.engine }
+                    imgSrc={ engineImage }
+                    titleStyle={ titleStyle.engine}
+                    explainStyle={ explainStyle.engine }
+                    buttonStyle={ buttonStyle.engine }
+                    title="DRAM対応AVプレイヤーエンジン"
+                    explain="スマートフォン端末やSTB等のプラットフォーム上で映像・音声の再生を行う為の基本コンポーネントを搭載したソフトウェアです。"
+                    to="/daw"
+                />
+                <ExplainModule
+                    top="1671.228px"
+                    left="calc((100% - 535.197px) / 2)"
+                    imgStyle={ imgStyle.reverseMirror }
+                    imgSrc={ reverseMirror }
+                    titleStyle={ titleStyle.reverseMirror}
+                    explainStyle={ explainStyle.reverseMirror }
+                    buttonStyle={ buttonStyle.reverseMirror }
+                    title="逆ミラーリング"
+                    explain="お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組みをご提供します。"
+                    to="/mirror"
+                />
+            </section>
+        )
+
+    }
 }
 
 const imgStyle = {
@@ -80,7 +90,7 @@ const imgStyle = {
        position: "absolute",
        top:"48.103px",
        width: "128.262px",
-       height: "235.958px"
+       height: "235.958px",
     },
     gateway: {
         position: "absolute",
@@ -238,7 +248,23 @@ const buttonStyle = {
         fontSize:"16.41px",
         fontWeight: "lighter",
         borderRadius : "17pt",
-        zIndex:1,
+        zIndex:100,
+    },
+
+    gateway: {
+        position: "absolute",
+        width:"240.667px",
+        height: "34px",
+        top: "178.054px",
+        left:  "221.191px",
+        backgroundColor:"rgba(116,206,226, 0.2)",
+        color: "#74CEE2",
+        border: "none",
+        fontFamily: "Helvetica Neue, Arial",
+        fontSize:"16.41px",
+        fontWeight: "lighter",
+        borderRadius : "17pt",
+        zIndex:3,
     },
     bulb: {
         position: "absolute",

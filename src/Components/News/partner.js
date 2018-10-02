@@ -1,28 +1,31 @@
 import React from 'react';
 import cwip from "../../static/cwip.png";
 import zwave from "../../static/zwave_alliance.svg";
+import Fade from "react-reveal/Fade";
 
 const Partner = () => {
     return (
+        <Fade>
         <div className = "partner-wrapper" style = {styles.partnerWrapper}>
-            <div className="partner1" style = { styles.partner1 }>
-                <img src =  {cwip} alt = "partner-img1" style = {styles.partner1Img} />
-                <div style = {styles.partner1Text}>
-                    <p>
-                        ※株式会社JLabsは、CWIP認定パートナーです。
-                    </p>
-                    <p style = {styles.partner1TextMain}>
-                        WidevineDRMを使用したクライアントにも対応しています。
+                <div className="partner1" style = { styles.partner1 }>
+                    <img src =  {cwip} alt = "partner-img1" style = {styles.partner1Img} />
+                    <div style = {styles.partner1Text}>
+                        <p>
+                            ※株式会社JLabsは、CWIP認定パートナーです。
+                        </p>
+                        <p style = {styles.partner1TextMain}>
+                            WidevineDRMを使用したクライアントにも対応しています。
+                        </p>
+                    </div>
+                </div>
+                <div className="partner2" style = { styles.partner2 }>
+                    <img src =  {zwave} alt = "partner-img2" style = {styles.partner2Img} />
+                    <p style = { styles.partner2Text }>
+                        ※株式会社JLabsは、Z-waveアライアンスメンバーです。
                     </p>
                 </div>
-            </div>
-            <div className="partner2" style = { styles.partner2 }>
-                <img src =  {zwave} alt = "partner-img2" style = {styles.partner2Img} />
-                <p style = { styles.partner2Text }>
-                    ※株式会社JLabsは、Z-waveアライアンスメンバーです。
-                </p>
-            </div>
         </div>
+        </Fade>
     )
 }
 

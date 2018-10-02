@@ -1,16 +1,21 @@
 import React from "react";
 import jsonInfo from "../../static/jobs_info.svg";
+import HeaderDetail from "../../Components/Header/header_detail";
 
 const Recruit = () => {
     return (
-        <section className="recruit-wrapper" style = {{
+        <div>
+          <HeaderDetail/>
+          <section className="recruit-wrapper" style = {{
             position: "relative",
             marginTop: "149.648px",
             width:"100%",
             height: "1300.489px",
-        }}>
+          }}>
             <div className="content-wrapper" style = {{
-                marginLeft:"28.17%",
+                marginLeft:"auto",
+                marginRight: "auto",
+                width: "585.792px"
             }}>
                 <div style = { styles.recruitTitle }>
                     Recruit
@@ -99,7 +104,8 @@ const Recruit = () => {
                     Copyright © 2018 JLabs All Right Reserved.
                 </footer>
             </div>
-        </section>
+          </section>
+        </div>
     )
 }
 

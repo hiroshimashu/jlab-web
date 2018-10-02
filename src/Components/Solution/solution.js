@@ -1,41 +1,47 @@
-import React from "react";
+import React, { Component } from "react";
 import SectionTitle from "../Common/sectionTitle";
 import Pentagon from "./backgroundPentagon";
 import ExplainModule from "../Common/explainModule";
 import Consulting from "../../static/consulting.svg";
 import Embbed from "../../static/embbed.svg";
 
-const Solution = () => {
-    return (
-        <section className="solution-wrapper" style = {{ position: "relative", widht: "100%", height: "1057.54px"}}>
-            <SectionTitle
-                title = "Solution"
-            />
-            <Pentagon/>
-            <ExplainModule
-                top = "165.444px"
-                left = "calc((100% - 546.99px) / 2)"
-                imgStyle = { imgStyle.consulting }
-                imgSrc = { Consulting }
-                titleStyle = { titleStyle.consulting }
-                explainStyle = { explainStyle.consulting }
-                buttonStyle = { buttonStyle.consulting }
-                title = "ソフトウェア技術コンサル"
-                explain = "豊富な製品開発経験を生かし、製品に最適なソフトウェア構成を設計、仕様策定やその後の開発支援もお手伝いをします。"
-            />
-            <ExplainModule
-                top = "535.924px"
-                left = "calc((100% - 546.99px) / 2)"
-                imgStyle = { imgStyle.embbed }
-                imgSrc = { Embbed }
-                titleStyle = { titleStyle.embbed }
-                explainStyle = { explainStyle.embbed }
-                buttonStyle = { buttonStyle.embbed }
-                title = "組み込みミドルウェア開発"
-                explain = "当社の研究開発から培われたものづくりの豊富なノウハウと技術力を生かし、様々なご要望にお答えいたします。"
-            />
-        </section>
-    )
+class Solution extends Component {
+    render() {
+        return (
+            <section className="solution-wrapper" style = {{ position: "relative", width: "100%", height: "1057.54px"}}>
+                <SectionTitle
+                    title = "Solution"
+                    left = "calc(50% - 65.845px)"
+                    Ref = { this.props.solutionRef }
+                />
+                <Pentagon/>
+                <ExplainModule
+                    top = "165.444px"
+                    left = "calc((100% - 546.99px) / 2)"
+                    imgStyle = { imgStyle.consulting }
+                    imgSrc = { Consulting }
+                    titleStyle = { titleStyle.consulting }
+                    explainStyle = { explainStyle.consulting }
+                    buttonStyle = { buttonStyle.consulting }
+                    title = "ソフトウェア技術コンサル"
+                    explain = "豊富な製品開発経験を生かし、製品に最適なソフトウェア構成を設計、仕様策定やその後の開発支援もお手伝いをします。"
+                    to = "/consulting"
+                />
+                <ExplainModule
+                    top = "535.924px"
+                    left = "calc((100% - 546.99px) / 2)"
+                    imgStyle = { imgStyle.embbed }
+                    imgSrc = { Embbed }
+                    titleStyle = { titleStyle.embbed }
+                    explainStyle = { explainStyle.embbed }
+                    buttonStyle = { buttonStyle.embbed }
+                    title = "組み込みミドルウェア開発"
+                    explain = "当社の研究開発から培われたものづくりの豊富なノウハウと技術力を生かし、様々なご要望にお答えいたします。"
+                    to = "middleware"
+                />
+            </section>
+        )
+    }
 }
 
 const imgStyle = {

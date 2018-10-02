@@ -1,37 +1,50 @@
 import React from "react";
-import dawEngine from "../../static/daw_engine.svg";
+import mirror from "../../static/mirror_img.svg";
+import HeaderDetail from "../../Components/Header/header_detail";
 
-const AvEngine = () => {
+const Mirror = () => {
     return (
-        <section style = { styles.wrapper }>
+        <div>
+           <HeaderDetail/>
+           <section style = { styles.wrapper }>
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
-                    「DRM対応AVプレイヤーエンジン」とは？
+                    「逆ミラーリング」とは
                 </p>
                 <div style = { styles.explain }>
                     <p>
-                        スマートフォン端末やSTB等のマルチメディア機器上で映像・音の再生を行
+                        お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組
                     </p>
-                    <p style = {{ letterSpacing: "0.15em"}}>
-                        う為の基本コンポーネントを搭載したソフトウェアです。IPTVフォーラム
+                    <p style = {{ letterSpacing: "0.145em"}}>
+                        みをご提供します。Android OSを搭載したSTBや情報機器を、スマート
+                    </p>
+                    <p style = {{ letterSpacing: "0.23em"}}>
+                        フォンからリモート操作することを実現する為のSDKです。当社の
                     </p>
                     <p style = {{ letterSpacing: "0.14em"}}>
-                        仕様やDRMにも対応しながら、映像のコントロールを細かく制御する事が
+                        RemoteDeviceDriver技術により、情報機器が表示する画面をリアルタイ
+                    </p>
+                    <p style = {{ letterSpacing: "0.09em"}}>
+                        ムにスマートフォンの画面へ表示することや、スマートフォンのデバイスリ
                     </p>
                     <p>
-                        できます。
+                        ソースを情報機器にて利用する事が可能となります。
+                    </p>
+                    <p>
+
                     </p>
                 </div>
-                <img src = { dawEngine } style = {{
+                <img src = { mirror } style = {{
                     marginTop: "43.392px",
-                    marginLeft:"10px",
-                    width: "516.217px"
+                    marginLeft:"13.793px",
+                    width: "487.317px"
                 }}/>
                 <p style = { styles.footer }>
                     Copyright © 2018 JLabs All Right Reserved.
                 </p>
             </div>
-        </section>
+          </section>
+        </div>
     )
 }
 
@@ -40,13 +53,15 @@ const styles = {
         position: "relative",
         marginTop: "149.648px",
         width:"100%",
-        height: "1031.867px"
+        height: "973.67px"
     },
     contentWrapper: {
-        marginLeft: "23.82%",
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "530px"
     },
     drmTitle: {
-        marginLeft:"29.673px",
+        marginLeft:"125.16px",
         fontFamily: "Helvetica Neue, Arial",
         fontWeight: "lighter",
         fontSize: "24px",
@@ -60,11 +75,11 @@ const styles = {
         fontSize: "14px",
         lineHeight: "30px",
         color: "#ffffff",
-        letterSpacing: "0.12em",
+        letterSpacing: "0.116em",
         textAlign: "justify",
     },
     footer: {
-        marginTop: "330.943px",
+        marginTop: "215.048px",
         marginLeft: "134.481px",
         fontSize : "12px",
         fontWeight: "lighter",
@@ -73,4 +88,4 @@ const styles = {
     }
 }
 
-export default AvEngine;
+export default Mirror;

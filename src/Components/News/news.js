@@ -1,32 +1,58 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SectionTitle from "../Common/sectionTitle";
-import Triangle from "../../static/background_triangle.svg";
+import UpperTriangle from "../../static/triangle_upper.svg";
 import Partner from "./partner";
+import { Parallax } from 'react-scroll-parallax';
+import LowerTriangle from "../../static/triangle_lower.svg";
+import Fade from "react-reveal/Fade";
 
-const News = () => {
+class News extends Component {
+    render() {
     return (
-        <section className = "news_and_company" style = {{position: "relative", zIndex:1, marginTop: "71.245px", marginLeft:"calc((100% - 782px) / 2)", width: "782px", height:"1090px", backgroundImage:"url('../../static/background_triangle.svg)"}}>
-           <img src = { Triangle } alt = "triangle" style = {{ position: "absolute",width:"782px" }} />
-           <SectionTitle 
-               title = "News"
-               top = "26.278px"
-           />
-           <p className = "news-main" style = {{ 
-               position: "absolute",
-               color:"#ABE1FA", 
-               fontSize: "13px" ,
-               top: "86.893px", 
-               left: "226.339px", 
-               letterSpacing: "0.15em", 
-               fontWeight: "lighter",
-            
-            }} >
-               2018.00.00 ホームページをリニューアルしました。
+        <section className = "news_and_company" style = {{position: "relative", zIndex:1, marginTop: "71.245px", marginLeft:"auto", marginRight: "auto", width: "782px", height:"1090px"}}>
+            <Parallax
+                className="custom-class"
+                offsetYMax={10}
+                offsetYMin={-15}
+                slowerScrollRate
+                tag="Upper"
+                styleInner = {{ position: "absolute",width:"706px", left:"120px" }}
+            >
+                <img src = { UpperTriangle } alt = "triangle" />
+            </Parallax>
+            <Parallax
+                className="custom-class2"
+                offsetYMax={-15}
+                offsetYMin={15}
+                slowerScrollRate
+                tag="Lower"
+                styleInner = {{ position: "absolute",width:"755px", top: "402px" }}
+            >
+                <img src = { LowerTriangle } alt = "triangle" />
+            </Parallax>
+            <SectionTitle
+                title = "News"
+                top = "26.278px"
+                left = "358.741px"
+                Ref = { this.props.companyRef }
+            />
+            <p className = "news-main" style = {{
+                    position: "absolute",
+                    color:"#ABE1FA",
+                    fontSize: "13px" ,
+                    top: "86.893px",
+                    left: "226.339px",
+                    letterSpacing: "0.15em",
+                    fontWeight: "lighter",
+                }}>2018.00.00 ホームページをリニューアルしました。
             </p>
+
             <SectionTitle
                 title = "Company"
                 top = "245.142px"
-　          />
+                left = "323.561px"
+            />
+            <Fade bottom>
             <div className = "company-header" style = {{
                position: "absolute",
                color:"#FFFFFF", 
@@ -39,6 +65,8 @@ const News = () => {
             }}>
                 アイデアと技術で常に一歩先の驚きと感動を。
             </div>
+            </Fade>
+            <Fade bottom>
             <p className = "company-main" style = {{ 
                position: "absolute",
                color:"#ABE1FA", 
@@ -61,9 +89,10 @@ const News = () => {
             クトを企画・開発しており、培われたアイデアと技術、開発環境を様々な形で
             提供しています。
             </p>
+            </Fade>
             <Partner />
         </section>
-    )
+    )}
 }
 
 export default News;
