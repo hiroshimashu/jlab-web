@@ -8,13 +8,13 @@ import Embbed from "../../static/embbed.svg";
 class Solution extends Component {
     render() {
         return (
-            <section className="solution-wrapper" style = {{ position: "relative", width: "100%", height: "1057.54px"}}>
+            <section className="solution-wrapper" style = {{ position: "relative", width: "857.957px", height: "1057.54px", marginLeft: "auto", marginRight: "auto", }}>
                 <SectionTitle
                     title = "Solution"
                     left = "calc(50% - 65.845px)"
                     Ref = { this.props.solutionRef }
                 />
-                <Pentagon/>
+                <Pentagon />
                 <ExplainModule
                     top = "165.444px"
                     left = "calc((100% - 546.99px) / 2)"

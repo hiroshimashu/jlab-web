@@ -1,5 +1,5 @@
 import React from "react";
-import lightBulb from "../../static/lightbulb_detail.png";
+import lightBulb from "../../static/light_bulb_detail.png";
 import　SectionTitleDetail from "../Common/sectionTitleDetail";
 import HeaderDetail from "../../Components/Header/header_detail";
 

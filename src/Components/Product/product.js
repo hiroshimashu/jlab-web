@@ -11,7 +11,7 @@ import reverseMirror from "../../static/reverse_mirror.svg";
 class Product extends Component {
     render() {
         return (
-            <section className="product" style={{position: "relative", width: "100%", height: "2299.873px"}}>
+            <section className="product" style={{position: "relative", width: "805.243px", height: "2299.873px", marginLeft: "auto",marginRight: "auto"}}>
                 <SectionTitle
                     title="Product"
                     top="48px"

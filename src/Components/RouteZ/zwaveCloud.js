@@ -129,7 +129,6 @@ const styles = {
         width:"33.333%",
         borderLeft: "1px solid #698198",
         borderRight: "1px solid #698198",
-        opacity: "0.5"
     },
     explain3Wrapper : {
         position: "relative",

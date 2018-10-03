@@ -22,12 +22,12 @@ const KeyMessage = () => {
 const styles = {
     KeyMessage: {
         position: "absolute",
-        width: "402.357px",
+        width: "460px",
         top: "25.16%",
         left: "50%",
         transform: "translateX(-50%)",
         fontWeight: "lighter",
-        fontSize: "12px",
+        fontSize: "16px",
         color:"#ffffff",
         letterSpacing:"2px"
     }

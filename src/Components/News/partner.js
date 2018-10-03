@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 const Partner = () => {
     return (
-        <Fade>
+        <Fade bottom>
         <div className = "partner-wrapper" style = {styles.partnerWrapper}>
                 <div className="partner1" style = { styles.partner1 }>
                     <img src =  {cwip} alt = "partner-img1" style = {styles.partner1Img} />

@@ -119,7 +119,6 @@ const styles = {
         left: "81.85px",
         borderLeft: "1px solid #698198",
         borderRight: "1px solid #698198",
-        opacity: "0.5"
     },
     explain1Wrapper : {
         position: "relative",
@@ -129,7 +128,6 @@ const styles = {
     explain2Wrapper : {
         position: "relative",
         width:"50%",
-        opacity: "0.5"
     },
     explain1Title: {
         position: "absolute",

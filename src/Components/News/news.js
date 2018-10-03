@@ -16,7 +16,7 @@ class News extends Component {
                 offsetYMin={-15}
                 slowerScrollRate
                 tag="Upper"
-                styleInner = {{ position: "absolute",width:"706px", left:"120px" }}
+                styleInner = {{ position: "absolute", width:"706px", left:"120px" }}
             >
                 <img src = { UpperTriangle } alt = "triangle" />
             </Parallax>
@@ -36,7 +36,8 @@ class News extends Component {
                 left = "358.741px"
                 Ref = { this.props.companyRef }
             />
-            <p className = "news-main" style = {{
+            <Fade bottom>
+                 <p className = "news-main" style = {{
                     position: "absolute",
                     color:"#ABE1FA",
                     fontSize: "13px" ,
@@ -44,9 +45,9 @@ class News extends Component {
                     left: "226.339px",
                     letterSpacing: "0.15em",
                     fontWeight: "lighter",
-                }}>2018.00.00 ホームページをリニューアルしました。
-            </p>
-
+                 }}>2018.00.00 ホームページをリニューアルしました。
+                  </p>
+            </Fade>
             <SectionTitle
                 title = "Company"
                 top = "245.142px"

@@ -42,11 +42,10 @@ const styles = {
     menuWrapper: {
         position: "absolute",
         zIndex: 1,
-        left: "50%",
-        transform: "translateX(-50%)",
-        top: "71.32px",
-        color: "#85A2BD",
-        width: "380.62px",
+        right:"5%",
+        top: "38px",
+        color: "#74CEE2",
+        width: "500px",
         display: "flex",
         justifyContent: "space-between",
         listStyle:"none",
@@ -56,7 +55,7 @@ const styles = {
         margin: "0px"
     },
     menu: {
-        fontSize: '14.63px',
+        fontSize: '17.63px',
         letterSpacing: "2.55px"
     }
     

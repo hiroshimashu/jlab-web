@@ -12,9 +12,10 @@ const logo = () => {
 const styles = {
     logoWrapper: {
         position: "absolute",
-        top: "26.11px",
+        top: "0px",
         left: "41.716px",
-        width:"51.523px",
+        width:"60.523px",
+        zIndex: 1,
     },
     logo : {
         width: "100%",

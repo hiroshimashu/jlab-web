@@ -97,13 +97,11 @@ const styles = {
         left: "202.219px",
         borderLeft: "1px solid #698198",
         borderRight: "1px solid #698198",
-        opacity: "0.5"
     },
     explain1Title: {
         position: "absolute",
         color: "#ffffff",
         left: "38.502px",
-        opacity: 1,
         zIndex: 1,
         fontSize : "17px",
         fontWeight:"lighter",
@@ -115,7 +113,6 @@ const styles = {
         color: "#85A2BD",
         left: "29.045px",
         top: "41.327px",
-        opacity: 1,
         zIndex: 1,
         fontSize : "11px",
         fontWeight:"lighter",

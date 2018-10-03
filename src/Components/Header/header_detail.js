@@ -8,7 +8,7 @@ class HeaderDetail extends Component {
     }
     render() {
         return (
-            <section className="header" style={{height: "107.363px"}}>
+            <section className="header" style={{height: "0px"}}>
                 <Logo />
                 <ul className = "menu-wrapper" style = {styles.menuWrapper} >
                     <Link to = {{ pathname:"/", state: { where: "company" } }} style = { styles.menu } >
@@ -33,25 +33,23 @@ const styles = {
     menuWrapper: {
         position: "absolute",
         zIndex: 1,
-        left: "50%",
-        transform: "translateX(-50%)",
-        top: "71.32px",
-        color: "#85A2BD",
-        width: "380.62px",
+        right:"5%",
+        top: "38px",
+        color: "#ffffff",
+        width: "500px",
         display: "flex",
         justifyContent: "space-between",
-        listStyle: "none",
+        listStyle:"none",
         fontSize: '14.63px',
         fontFamily: "Helvetica Neue, Arial",
         fontWeight: "lighter",
         margin: "0px",
     },
     menu: {
-        fontSize: '14.63px',
+        fontSize: '17.63px',
         letterSpacing: "2.55px",
-        textDecoration:"none",
-        color:"#85A2BD",
     }
+
 
 }
 

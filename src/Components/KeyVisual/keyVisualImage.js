@@ -1,5 +1,5 @@
 import React from "react";
-import keyVisualVideo from "../../static/keyvisual_movie.mp4";
+import keyVisualVideo from "../../static/keyvisual_movie_mod.mp4";
 
 const KeyVisualImage = () => {
     return (

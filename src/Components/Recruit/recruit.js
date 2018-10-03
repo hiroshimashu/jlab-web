@@ -15,7 +15,7 @@ const Recruit = () => {
             <div className="content-wrapper" style = {{
                 marginLeft:"auto",
                 marginRight: "auto",
-                width: "585.792px"
+                width: "680px"
             }}>
                 <div style = { styles.recruitTitle }>
                     Recruit
@@ -125,7 +125,7 @@ const styles = {
     },
     jobsTitle: {
         height: "30px",
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "30px",
         letterSpacing : "1.94px",
@@ -133,7 +133,7 @@ const styles = {
         display:"inline",
     },
     jobs: {
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "22px",
         letterSpacing : "2.75px",
@@ -146,14 +146,14 @@ const styles = {
     },
     jobRequirementTitle: {
         height: "30px",
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "30px",
         letterSpacing : "0.8px",
         color : "#85A2BD",
     },
     jobRequirement: {
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "22px",
         letterSpacing : "2.75px",
@@ -168,7 +168,7 @@ const styles = {
     salaryTitle: {
         width:"105.22px",
         height: "30px",
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "30px",
         letterSpacing : "0.8px",
@@ -176,7 +176,7 @@ const styles = {
         textAlign: "right",
     },
     salary: {
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "22px",
         letterSpacing : "2.75px",
@@ -192,7 +192,7 @@ const styles = {
     workingHourTitle: {
         width:"105.22px",
         height: "30px",
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "30px",
         letterSpacing : "0.8px",
@@ -200,7 +200,7 @@ const styles = {
         textAlign: "right",
     },
     workingHour: {
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "22px",
         letterSpacing : "2.75px",
@@ -215,7 +215,7 @@ const styles = {
     workingPlaceTitle: {
         width:"105.22px",
         height: "30px",
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "30px",
         letterSpacing : "0.8px",
@@ -223,7 +223,7 @@ const styles = {
         textAlign: "right",
     },
     workingPlace: {
-        fontSize : "11px",
+        fontSize : "13px",
         fontWeight: "lighter",
         lineHeight : "22px",
         letterSpacing : "2.75px",

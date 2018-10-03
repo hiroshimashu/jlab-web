@@ -13,7 +13,7 @@ class header extends Component {
 
   render() {
       return (
-          <section className="header" style={{height: "107.363px"}}>
+          <section className="header" style={{height: "0px",  cursor: "pointer"}}>
               <Logo />
               <Menu
                   company={ this.props.company }
