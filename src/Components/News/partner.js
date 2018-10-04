@@ -20,7 +20,7 @@ const Partner = () => {
                 </div>
                 <div className="partner2" style = { styles.partner2 }>
                     <img src =  {zwave} alt = "partner-img2" style = {styles.partner2Img} />
-                    <p style = { styles.partner2Text }>
+                    <p style = { styles.partner2Text } className="partner2-text">
                         ※株式会社JLabsは、Z-waveアライアンスメンバーです。
                     </p>
                 </div>
@@ -35,6 +35,7 @@ const styles = {
         position: "absolute",
         top: "712.623px",
         left: "133.817px",
+        width: "500px"
     },
     partner1: {
         display: "flex",
@@ -71,10 +72,10 @@ const styles = {
         position: "absolute",
         width: "380.1px",
         left: "147.648px",
-        top: "128.2px",
         textAlign:"justify",
         lineHeight : "19px",
         letterSpacing : "1.75pt",
+
     }
 }
 export default Partner;

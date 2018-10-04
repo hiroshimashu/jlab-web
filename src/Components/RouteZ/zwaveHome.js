@@ -1,34 +1,28 @@
 import React from "react";
 import home from "../../static/zwave_home.svg";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 
 const ZwaveHome = () => {
     return (
         <div className = "zwave-home-wrapper" style = { styles.homeWrapper }>
-            <Fade bottom>
-                <img
+            <img
                 src = { home }
                 className = "zwave-home"
                 style = { styles.homeImg}
                 alt = "zwave-phone"
-                />
-                <p style = { styles.zwaveHome }>
+            />
+            <p style = { styles.zwaveHome }>
                     Z-Wave Home ゲートウェイ
-                </p>
-            </Fade>
-            <Fade bottom>
-                <div style = { styles.zwaveHomeText }>
+            </p>
+            <div style = { styles.zwaveHomeText }>
                     <p>
                     ゲートウェイデバイス上で動作するクライアントソフトウェアです。Z-Wave
                     </p>
                     <p>
                     対応のゲートウェイデバイスに組み込んで使用することが可能です。
                     </p>
-                </div>
-            </Fade>
-            <Fade bottom>
-              <div className = "phone-explain" style = { styles.explain }>
+            </div>
+            <div className = "phone-explain" style = { styles.explain }>
                 <div style = { styles.explain1Wrapper }>
                     <p　style = {styles.explain1Title}>
                         Z-WaveクラウドGW連携
@@ -62,14 +56,11 @@ const ZwaveHome = () => {
                     </div>
                 </div>
               </div>
-            </Fade>
-            <Fade bottom>
-                <Link to="/gateway">
+             <Link to="/gateway">
                     <button　style = { styles.gatewayButton }>
                         Z-Wave HOME ゲートウェイ Arena Box 詳細ページへ
                     </button>
-                </Link>
-            </Fade>
+             </Link>
         </div>
     )
 }
@@ -86,6 +77,7 @@ const styles = {
     homeImg : {
         position: "absolute",
         width: "152.529px",
+        height: "169.994px",
         left: "239.894px",
     },
     zwaveHome: {
@@ -117,6 +109,7 @@ const styles = {
         top: "324.515px",
         left: "81.85px",
         borderLeft: "1px solid #698198",
+        borderRight: "1px solid #698198",
     },
     explain1Wrapper : {
         position: "relative",

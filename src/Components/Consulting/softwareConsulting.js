@@ -67,15 +67,15 @@ const styles = {
         contentWrapper: {
             marginLeft: "auto",
             marginRight: "auto",
-            width: "670px"
+            width: "540px"
         },
         drmTitle: {
-            marginLeft:"125.16px",
             fontFamily: "Helvetica Neue, Arial",
             fontWeight: "lighter",
             fontSize: "24px",
             color: "#74CEE2",
             letterSpacing: "0.05em",
+            textAlign: "center"
         },
         explain: {
             marginTop:"29.673px",
@@ -104,6 +104,7 @@ const styles = {
             color : "#85A2BD",
             letterSpacing: "0.116em",
             textAlign: "justify",
+            width: "670px"
         },
         exTitle: {
             fontSize: "13px",

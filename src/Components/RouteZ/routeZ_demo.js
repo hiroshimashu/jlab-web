@@ -4,7 +4,6 @@ import Fade from "react-reveal/Fade";
 
 const DemoKit = () => {
     return (
-        <Fade bottom>
           <section className =  "routez-demokit" style = { styles.demokit}>
             <p className = "routez-demokit-title" style = { styles.demokitTitle }>
                RouteZ デモキット
@@ -34,11 +33,12 @@ const DemoKit = () => {
                     </p>
                 </div>
             </div>
-            <p style = { styles.email }>
-                info@jlabs.com
-            </p>
+            <a href = "mailto:info@jlabs.com">
+                <p style = { styles.email }>
+                    info@jlabs.com
+                </p>
+            </a>
           </section>
-        </Fade>
     )
 }
 
@@ -68,7 +68,7 @@ const styles = {
         letterSpacing : "1.55px",
         color : "#FFFFFF",
         left: "50%",
-        width: "515.485px",
+        width: "540.485px",
         top: "61.493px",
         transform: "translateX(-50%)",
         textAlign:"justify"

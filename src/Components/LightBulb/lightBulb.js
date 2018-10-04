@@ -14,16 +14,16 @@ const LightBulb = () => {
                 space = "0.176em"
             />
             <div style = {styles.lightBulbTitle }>
-                <p style = {{ letterSpacing:"0.116em"}}>
+                <p className="light-bulb-text1">
                     「Rocket Bulb」は弊社開発による、Z-Waveに対応したスマートLED電球
                 </p>
-                <p style = {{ letterSpacing:"0.075em"}}>
+                <p className="light-bulb-text2">
                     です。遠隔からのオン・オフの操作、調光、ホワイトバランスの設定が行え
                 </p>
-                <p style = {{ letterSpacing:"0.151em"}}>
+                <p className="light-bulb-text3">
                     ます。調光・ホワイト調整が可能（昼光色←→電気色）なRocket Bulb
                 </p>
-                <p style = {{ letterSpacing:"0.11em"}}>
+                <p className="light-bulb-text4">
                     CCTと、調光のみ可能(電球色）なRocket Bulb DIMの２種類をご提供しま
                 </p>
                 <p>
@@ -40,9 +40,9 @@ const LightBulb = () => {
                         5~100%の調光がスムーズに出来ます
                     </li>
                     <li style = { styles.function2 }>
-                        お客様のニーズに王子で2700Kから
+                        お客様のニーズに応じて2700Kから
                     </li>
-                    <p style = {{marginLeft: "1.5em"}}>
+                    <p className="organize-white">
                         6500Kまでのホワイト調整が可能　※CCTのみ
                     </p>
                     <li style = { styles.function3 }>
@@ -468,7 +468,7 @@ const LightBulb = () => {
                                             寸法
                                         </p>
                                     </div>
-                                    <div style = {{ width: "48.926px"}}>
+                                    <div className="outer-radius">
                                         <div style = {{borderBottom:"1px solid #74CEE2",height: "28px"}}>
                                             <p
                                                 style = {{

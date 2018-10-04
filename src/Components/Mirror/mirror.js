@@ -1,5 +1,5 @@
 import React from "react";
-import mirror from "../../static/mirror_img.svg";
+import mirror from "../../static/mirror_fix.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
 
 const Mirror = () => {
@@ -21,7 +21,7 @@ const Mirror = () => {
                     <p style = {{ letterSpacing: "0.23em"}}>
                         フォンからリモート操作することを実現する為のSDKです。当社の
                     </p>
-                    <p style = {{ letterSpacing: "0.14em"}}>
+                    <p className="real-time">
                         RemoteDeviceDriver技術により、情報機器が表示する画面をリアルタイ
                     </p>
                     <p style = {{ letterSpacing: "0.09em"}}>
@@ -34,11 +34,21 @@ const Mirror = () => {
 
                     </p>
                 </div>
-                <img src = { mirror } style = {{
+                <div style = {{
+                    position: "relative",
                     marginTop: "43.392px",
                     marginLeft:"13.793px",
-                    width: "487.317px"
-                }}/>
+                    width: "487.317px",
+                    height: "383.847px"
+                }}>
+                    <p style = { styles.smartphone }>
+                        スマートフォン/タブレット
+                    </p>
+                    <p style = { styles.tvapp }>
+                        テレビアプリ
+                    </p>
+                    <img src = { mirror } style = {{ position: "absolute",height:"358.681px", top:"25.198px"}} />
+                </div>
                 <p style = { styles.footer }>
                     Copyright © 2018 JLabs All Right Reserved.
                 </p>
@@ -77,6 +87,24 @@ const styles = {
         color: "#ffffff",
         letterSpacing: "0.116em",
         textAlign: "justify",
+    },
+    smartphone: {
+        position: "absolute",
+        left: "37.265px",
+        fontFamily: "Helvetica Neue, Arial",
+        fontWeight: "lighter",
+        fontSize: "10px",
+        color: "#74CEE2",
+        letterSpacing: "0.176em",
+    },
+    tvapp: {
+        position: "absolute",
+        fontFamily: "Helvetica Neue, Arial",
+        fontWeight: "lighter",
+        fontSize: "10px",
+        color: "#74CEE2",
+        letterSpacing: "0.176em",
+        left: "355.575px"
     },
     footer: {
         marginTop: "215.048px",

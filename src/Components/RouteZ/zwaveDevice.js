@@ -1,34 +1,28 @@
 import React from "react";
 import device from "../../static/zwave_device.svg";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 
 const ZwaveDevice = () => {
     return (
         <div className = "zwave-device-wrapper" style = { styles.deviceWrapper }>
-            <Fade bottom>
-                <img
+            <img
                 src = { device }
                 className = "zwave-device"
                 style = { styles.deviceImg}
                 alt = "zwave-device"
-                />
-                <p style = { styles.device }>
+            />
+            <p style = { styles.device }>
                     Z-Wave デバイス
-                </p>
-            </Fade>
-            <Fade bottom>
-                <div style = { styles.zwaveDeviceText }>
+            </p>
+            <div style = { styles.zwaveDeviceText }>
                     <p>
                         ゲートウェイデバイス上で動作するクライアントソフトウェアです。Z-Wave
                     </p>
                     <p>
                         対応のゲートウェイデバイスに組み込んで使用することが可能です。
                     </p>
-                </div>
-            </Fade>
-            <Fade bottom>
-                <div className = "phone-explain" style = { styles.explain }>
+            </div>
+            <div className = "phone-explain" style = { styles.explain }>
                     <p　style = {styles.explain1Title}>
                         ソリューション提供
                     </p>
@@ -40,15 +34,12 @@ const ZwaveDevice = () => {
                         のソフトウェア開発を承ります
                       </p>
                     </div>
-                </div>
-            </Fade>
-            <Fade bottom>
-                <Link to = "/led">
+            </div>
+            <Link to = "/led">
                     <button　style = { styles.gatewayButton }>
                         Z-Wave LED 電球 Rocket Bulb 詳細ページへ
                     </button>
-                </Link>
-            </Fade>
+            </Link>
         </div>
     )
 }
@@ -65,6 +56,7 @@ const styles = {
     deviceImg : {
         position: "absolute",
         width: "331.115px",
+        height: "186.537px",
         left: "160.201px",
     },
     device: {

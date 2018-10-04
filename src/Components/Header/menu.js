@@ -9,7 +9,7 @@ const Menu = (props) => {
             <li style = { styles.menu }
                 onClick = {() => {
                     console.log(props.company);
-                    scrollToComponent(props.company, {offset: 70, align: "top", duration: 100})}}
+                    scrollToComponent(props.company, {offset: 0, align: "top", duration: 100})}}
              >
                 Company
             </li>

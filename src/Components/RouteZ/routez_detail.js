@@ -25,32 +25,23 @@ const RouteZDetail = () => {
                     開始することが可能です。
                 </p>
             </div>
-            <Fade bottom>
-                <img src = { routezImgExplain } alt = "routez-img-explain" style = {styles.routezImg}/>
-            </Fade>
-            <Fade bottom>
-                <img src = { routezExlain } alt = "routez-explain" style = {styles.routezExplain} />
-            </Fade>
-            <Fade bottom>
-                <div　style = { styles.demoMovieTitle }>
+            <img src = { routezImgExplain } alt = "routez-img-explain" style = {styles.routezImg}/>
+            <img src = { routezExlain } alt = "routez-explain" style = {styles.routezExplain} />
+            <div　style = { styles.demoMovieTitle }>
                     <p  style = { styles.demoMovieTitleText1 }>
                         RouteZ demo movie
                     </p>
                     <p style = { styles.demoMovieTitleText2 }>
                         「From anywhere」
                     </p>
-                </div>
-            </Fade>
-            <Fade bottom>
-                <video
+            </div>
+            <video
                 controls
                 muted
-                style = { styles.demoMovie}
+                style = { styles.demoMovie }
                 src = { demo }
-                >
-
-                </video>
-            </Fade>
+            >
+            </video>
         </section>
     )
 }

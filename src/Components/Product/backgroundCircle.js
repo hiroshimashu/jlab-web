@@ -8,7 +8,7 @@ const BackgroundCircle = () => {
         <div>
             <Parallax
                 className="custom-class3"
-                offsetYMax={30}
+                offsetYMax={100}
                 offsetYMin={-30}
                 slowerScrollRate
                 tag="Circle"
@@ -18,7 +18,7 @@ const BackgroundCircle = () => {
             </Parallax>
             <Parallax
                 className="custom-class3"
-                offsetYMax={-30}
+                offsetYMax={-100}
                 offsetYMin={30}
                 slowerScrollRate
                 tag="Circle"

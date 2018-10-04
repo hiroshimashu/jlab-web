@@ -8,18 +8,17 @@ const Pentagon = () => {
         <div>
             <Parallax
                 className="custom-class3"
-                offsetYMax={-20}
+                offsetYMax={-50}
                 offsetYMin={20}
                 slowerScrollRate
                 tag="Pentagon"
                 styleInner = {{ width: "577.471px", position: "absolute", top: "200.067px",  }}
             >
-                <img alt = "pentagon" src = { pentagon } className="pentagon"
-                />
+                <img alt = "pentagon" src = { pentagon } className="pentagon"/>
             </Parallax>
             <Parallax
                 className="custom-class3"
-                offsetYMax={20}
+                offsetYMax={50}
                 offsetYMin={-10}
                 slowerScrollRate
                 tag="Pentagon"

@@ -15,7 +15,7 @@ const Recruit = () => {
             <div className="content-wrapper" style = {{
                 marginLeft:"auto",
                 marginRight: "auto",
-                width: "680px"
+                width:"540px"
             }}>
                 <div style = { styles.recruitTitle }>
                     Recruit
@@ -97,9 +97,11 @@ const Recruit = () => {
                         </p>
                     </div>
                 </div>
-                <div style = { styles.address }>
+                <a href = "mailto:info@jlabs.com">
+                  <div style = { styles.address }>
                     info@jlabs.com
-                </div>
+                  </div>
+               </a>
                 <footer style = { styles.footer }>
                     Copyright © 2018 JLabs All Right Reserved.
                 </footer>
@@ -111,12 +113,12 @@ const Recruit = () => {
 
 const styles = {
     recruitTitle: {
-        marginLeft:"173.154px",
         fontFamily: "Helvetica Neue, Arial",
         fontWeight: "lighter",
         fontSize: "24px",
         color: "#74CEE2",
         letterSpacing: "0.176em",
+        textAlign: "center"
     },
     jobsWrapper: {
         marginLeft: "57.746px",
@@ -142,6 +144,7 @@ const styles = {
     },
     jobRequirementWrapper: {
         marginTop: "63.634px",
+        width: "680px",
         display:"flex",
     },
     jobRequirementTitle: {
@@ -235,7 +238,8 @@ const styles = {
     infoWrapper: {
         position: "relative",
         marginTop:"64.656px",
-        marginLeft: "40.78px",
+        marginLeft: "auto",
+        marginRight: "auto",
         width: "355px",
         height: "123.326px"
     },
@@ -266,7 +270,9 @@ const styles = {
         letterSpacing : "4.22px",
         color : "#ffffff",
         marginTop: "29.092px",
-        marginLeft: "114.388px"
+        marginLeft: "auto",
+        marginRight: "auto",
+        textAlign: "center"
 
     },
     footer: {

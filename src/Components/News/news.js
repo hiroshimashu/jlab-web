@@ -12,17 +12,19 @@ class News extends Component {
         <section className = "news_and_company" style = {{position: "relative", zIndex:1, marginTop: "71.245px", marginLeft:"auto", marginRight: "auto", width: "782px", height:"1090px"}}>
             <Parallax
                 className="custom-class"
-                offsetYMax={10}
+                offsetYMax={70}
                 offsetYMin={-15}
                 slowerScrollRate
                 tag="Upper"
                 styleInner = {{ position: "absolute", width:"706px", left:"120px" }}
             >
-                <img src = { UpperTriangle } alt = "triangle" />
+                <img src = { UpperTriangle } alt = "triangle"  style = {{
+
+                }} />
             </Parallax>
             <Parallax
                 className="custom-class2"
-                offsetYMax={-15}
+                offsetYMax={-100}
                 offsetYMin={15}
                 slowerScrollRate
                 tag="Lower"
@@ -52,6 +54,7 @@ class News extends Component {
                 title = "Company"
                 top = "245.142px"
                 left = "323.561px"
+                Ref = { this.props.companyRef }
             />
             <Fade bottom>
             <div className = "company-header" style = {{

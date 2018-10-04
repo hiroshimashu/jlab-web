@@ -49,9 +49,11 @@ const Info = () => {
                 <p>
                     TEL: 03-6712-2779
                 </p>
-                <p style = {{marginLeft:"32.5px"}}>
-                    Mail: info@jlabs.com
-                </p>
+                <a href = "mailto:info@jlabs.com">
+                    <p style = {{marginLeft:"32.5px"}}>
+                        Mail: info@jlabs.com
+                    </p>
+                </a>
             </div>
         </div>
     </Fade>

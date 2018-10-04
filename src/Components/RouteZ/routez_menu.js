@@ -8,11 +8,9 @@ import Fade from "react-reveal/Fade";
 const RoutezMenu = () => {
     return (
         <section style = { styles.routezMenu} className = "routez-menu">
-            <Fade bottom>
-                <p className="route-z-title" style = { styles.routezMenuTitle }>
+            <p className="route-z-title" style = { styles.routezMenuTitle }>
                     RouteZ Menu
-                </p>
-            </Fade>
+            </p>
             <ZwaveCloud />
             <ZwavePhone />
             <ZwaveHome />

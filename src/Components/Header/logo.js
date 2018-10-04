@@ -1,10 +1,13 @@
 import React from 'react';
 import jlab from '../../static/jlab_logo_small.png';
+import { Link } from "react-router-dom";
 
 const logo = () => {
     return (
         <div className="logo-wrapper" style = {styles.logoWrapper}>
-            <img className = "logo" alt = "jlab-logo-small"  style = {styles.logo} src = { jlab } />       
+            <Link to = "/">
+                <img className = "logo" alt = "jlab-logo-small"  style = {styles.logo} src = { jlab } />
+            </Link>
         </div>
     );
 }
