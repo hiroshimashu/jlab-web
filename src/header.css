@@ -1,0 +1,10 @@
+.header {
+    display: block;
+}
+
+
+@media (max-width: 801px) {
+    .header {
+        display: none;
+    }
+}

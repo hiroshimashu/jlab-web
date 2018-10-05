@@ -1,9 +1,10 @@
 import React from "react";
+import Home from "../Screen/home";
 
 const SmallMain = () => {
     return (
-        <div>
-
+        <div className="wrapper">
+            <Home />
         </div>
     )
 }

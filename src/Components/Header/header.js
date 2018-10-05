@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from "./logo";
 import Menu from "./menu";
+import MenuButton from "../MenuButton";
 
 class header extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class header extends Component {
 
   render() {
       return (
-          <section className="header" style={{height: "0px",  cursor: "pointer"}}>
+          <section className="header" style={{ cursor: "pointer" }}>
               <Logo />
               <Menu
                   company={ this.props.company }
@@ -21,6 +22,7 @@ class header extends Component {
                   solution = { this.props.solution }
                   contact = { this.props.contact }
               />
+              <MenuButton />
           </section>
       )
   }

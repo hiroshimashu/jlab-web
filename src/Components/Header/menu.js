@@ -46,7 +46,6 @@ const styles = {
         top: "38px",
         color: "#74CEE2",
         width: "500px",
-        display: "flex",
         justifyContent: "space-between",
         listStyle:"none",
         fontSize: '14.63px',
