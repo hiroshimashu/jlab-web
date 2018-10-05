@@ -1,7 +1,9 @@
 import React, { Component }  from "react";
 import SectionTitle from "../Common/sectionTitle";
+import SectionTitleSmall from "../Common/sectionTitleSmall";
 import BackgroundCircle from "./backgroundCircle";
 import ExplainModule from "../Common/explainModule";
+import ExplainModuleSmall from "../Common/explainModuleSmall";
 import routeZ from "../../static/route_z.svg";
 import arenaBox from "../../static/arena_box.png";
 import LightBolb from "../../static/light_bolb.png";
@@ -11,12 +13,16 @@ import reverseMirror from "../../static/reverse_mirror.svg";
 class Product extends Component {
     render() {
         return (
-            <section className="product" style={{position: "relative", width: "805.243px", height: "2299.873px", marginLeft: "auto",marginRight: "auto"}}>
+            <section className="product" style={{position: "relative", height: "2299.873px", marginLeft: "auto",marginRight: "auto"}}>
                 <SectionTitle
                     title="Product"
                     top="48px"
                     left="calc(50% - 63.4px)"
                     Ref={this.props.productRef}
+                />
+                <SectionTitleSmall
+                    title = "Product"
+                    id = "product"
                 />
                 <BackgroundCircle />
                 <ExplainModule
@@ -78,6 +84,55 @@ class Product extends Component {
                     title="逆ミラーリング"
                     explain="お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組みをご提供します。"
                     to="/mirror"
+                />
+                <ExplainModuleSmall
+                    id = "routez"
+                    moduleTitle = "RouteZ"
+                    imgWrapperClassName = "routez-img"
+                    src = { routeZ }
+                    explainTitle = "routez-explain-title"
+                    explainMain = "routez-explain"
+                    explain ="「RouteZ」は世界で最も普及しているスマートホーム向けIOT無線技術であるZ-Waveのデバイスを制御・管理するためのソフトウエア開発キットです。"
+                />
+                <ExplainModuleSmall
+                    id = "gateway"
+                    moduleTitle = "Z-Wave HOMEゲートウェイ Arena Box"
+                    imgWrapperClassName = "gateway-img-wrapper"
+                    imgClassName = "gateway-img"
+                    src = { arenaBox }
+                    explainTitle = "gateway-explain-title"
+                    explainMain = "gateway-explain"
+                    explain ="「Arena Box」はZ-Waveに対応したHOMEゲートウェイです。"
+                />
+                <ExplainModuleSmall
+                    id = "led-bulb"
+                    moduleTitle = "Z-Wave LED電球 Rocket Bulb"
+                    imgWrapperClassName = "bulb-img-wrapper"
+                    imgClassName = "bulb-img"
+                    src = { LightBolb }
+                    explainTitle = "bulb-explain-title"
+                    explainMain = "bulb-explain"
+                    explain ="「Rocket Bulb」は弊社開発による、Z-Wave対応のスマートLED電球です。"
+                />
+                <ExplainModuleSmall
+                    id = "av-player"
+                    moduleTitle = "DRAM対応AVプレイヤーエンジン"
+                    imgWrapperClassName = "engine-img-wrapper"
+                    imgClassName = "engine-img"
+                    src = { engineImage }
+                    explainTitle = "engine-explain-title"
+                    explainMain = "engine-explain"
+                    explain ="スマートフォン端末やSTB等のプラットフォーム上で映像・音声の再生を行う為の基本コンポーネントを搭載したソフトウェアです。"
+                />
+                <ExplainModuleSmall
+                    id = "mirror"
+                    moduleTitle = "逆ミラーリング"
+                    imgWrapperClassName = "mirror-img-wrapper"
+                    imgClassName = "mirror-img"
+                    src = { reverseMirror }
+                    explainTitle = "mirror-explain-title"
+                    explainMain = "mirror-explain"
+                    explain ="お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組みをご提供します。"
                 />
             </section>
         )

@@ -4,7 +4,7 @@ import keyVisualVideo from "../../static/keyvisual_movie_mod.mp4";
 const KeyVisualImage = () => {
     return (
         <div className = "key-visual-image-wrapper">
-            <video className="key-visual-image" alt ="key-visual"  src = {keyVisualVideo} autoPlay loop muted style = {styles.keyVisualImage} />
+            <video className="key-visual-image" alt ="key-visual"  src = {keyVisualVideo} autoPlay playsinline loop muted style = {styles.keyVisualImage} />
         </div>
     )
 }
