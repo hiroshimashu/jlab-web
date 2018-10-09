@@ -5,13 +5,16 @@ import RoutezMenu from "./routez_menu";
 import RoutezDemo from "./routeZ_demo";
 import Footer from "../Common/footer";
 import HeaderDetail from "../Header/header_detail";
+import Header from "../Header/header";
 import FooterSmall from "../Common/footer_small";
+import MenuScreen from "../Menu/menuScreen";
 
 class RouteZ extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isScrolled: false,
+            isOpen: false,
             width: window.innerWidth
         }
     }
@@ -19,6 +22,12 @@ class RouteZ extends Component {
     handleResize = (e) => {
         this.setState(() => {
             return {width: window.innerWidth}
+        });
+    }
+
+    handleClick = (e) => {
+        this.setState(() => {
+            return {open: !this.state.open}
         });
     }
 
@@ -65,7 +74,9 @@ class RouteZ extends Component {
     render() {
         return (
             <div>
+                { this.state.open && <MenuScreen /> }
                 { this.state.width > 801  &&  <HeaderDetail />}
+                { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick }/> }
                 { this.state.isScrolled && this.state.width > 801 &&  <GoTop handleClick = { this.goTop } />}
                 <div className="routeZ-wrapper">
                     <RoutezDetail />

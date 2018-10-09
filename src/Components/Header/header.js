@@ -22,7 +22,7 @@ class header extends Component {
                   solution = { this.props.solution }
                   contact = { this.props.contact }
               />
-              <MenuButton />
+              <MenuButton handleClick = { this.props.handleClick } />
           </section>
       )
   }

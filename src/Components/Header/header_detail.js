@@ -8,9 +8,9 @@ class HeaderDetail extends Component {
     }
     render() {
         return (
-            <section className="header" style={{height: "0px"}}>
+            <section className="header">
                 <Logo />
-                <ul className = "menu-wrapper" style = {styles.menuWrapper} >
+                <ul className = "menu-wrapper-detail" >
                     <Link to = {{ pathname:"/", state: { where: "company" } }} style = { styles.menu } >
                         Company
                     </Link>

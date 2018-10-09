@@ -49,8 +49,8 @@ class Main extends Component {
         return (
             <Router>
                 <div>
-                <ScrollToTop>
-                <Route exact path="/" component={ AppContainer } />
+                  <ScrollToTop>
+                    <Route exact path="/" component={ AppContainer } />
                     <Route path="/routez" component={ RouteZ } />
                     <Route path="/led" component={ LightBulb } />
                     <Route path="/recruit" component={ Recruit } />
@@ -59,7 +59,7 @@ class Main extends Component {
                     <Route path="/consulting" component={ SoftwareConsulting } />
                     <Route path="/middleware" component={ MiddleWare } />
                     <Route path="/gateway" component={Gateway} />
-                    </ScrollToTop>
+                  </ScrollToTop>
                 </div>
             </Router>
 

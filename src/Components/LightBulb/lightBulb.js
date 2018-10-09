@@ -2,6 +2,7 @@ import React from "react";
 import lightBulb from "../../static/light_bulb_detail.png";
 import　SectionTitleDetail from "../Common/sectionTitleDetail";
 import HeaderDetail from "../../Components/Header/header_detail";
+import LightBulbSmall from "./lightBulbSmall";
 
 const LightBulb = () => {
     return (
@@ -650,6 +651,7 @@ const LightBulb = () => {
                 </p>
             </footer>
         </section>
+        <LightBulbSmall />
         </div>
     )
 }

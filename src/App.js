@@ -12,17 +12,26 @@ class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
-          isScrolled: false
+          isScrolled: false,
+          width: window.innerWidth
       }
       this.node = React.createRef();
   }
 
   componentDidMount() {
       window.addEventListener('scroll', event => this.watchCurrentPosition(), true)
+      window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
         window.removeEventListener('scroll', event => this.watchCurrentPosition())
+      window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
   }
 
   watchCurrentPosition() {
@@ -61,7 +70,7 @@ class App extends Component {
     render() {
     return (
         <div className= "wrapper" ref = { this.node }>
-            { this.state.isScrolled &&  <GoTop handleClick = { this.goTop } />}
+            { this.state.isScrolled && this.state.width > 801 && <GoTop handleClick = { this.goTop } />}
             <KeyVisual />
             <News
                 companyRef = { this.props.companyRef }
