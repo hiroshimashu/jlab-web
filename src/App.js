@@ -74,6 +74,7 @@ class App extends Component {
             { this.state.isScrolled && this.state.width > 801 && <GoTop handleClick = { this.goTop } />}
             <KeyVisual />
             <News
+                newsRef = { this.props.newsRef }
                 companyRef = { this.props.companyRef }
             />
             <Product

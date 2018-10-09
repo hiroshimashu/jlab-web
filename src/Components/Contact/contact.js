@@ -22,6 +22,7 @@ class Contact extends Component {
               <SectionTitleSmall
                   title = "Contact"
                   id = "contact-title"
+                  Ref={ this.props.contactRef }
               />
               <Info />
               <GoogleMap />

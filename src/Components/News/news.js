@@ -31,11 +31,12 @@ class News extends Component {
                 title = "News"
                 top = "26.278px"
                 left = "358.741px"
-                Ref = { this.props.companyRef }
+                Ref = { this.props.newsRef }
             />
             <SectionTitleSmall
                 title = "News"
                 id = "news"
+                Ref = { this.props.newsRef }
             />
             <Fade bottom>
                  <p className = "news-main">
@@ -51,6 +52,7 @@ class News extends Component {
             <SectionTitleSmall
                 title = "Company"
                 id = "company"
+                Ref = { this.props.companyRef }
             />
             <Fade bottom>
             <div className = "company-header">

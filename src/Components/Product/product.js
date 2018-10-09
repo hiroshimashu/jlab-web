@@ -23,6 +23,7 @@ class Product extends Component {
                 <SectionTitleSmall
                     title = "Product"
                     id = "product"
+                    Ref={this.props.productRef}
                 />
                 <BackgroundCircle />
                 <ExplainModule

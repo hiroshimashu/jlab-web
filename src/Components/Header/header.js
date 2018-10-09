@@ -13,6 +13,7 @@ class header extends Component {
   }
 
   render() {
+
       return (
           <section className="header" style={{ cursor: "pointer" }}>
               <Logo />
@@ -22,7 +23,14 @@ class header extends Component {
                   solution = { this.props.solution }
                   contact = { this.props.contact }
               />
-              <MenuButton handleClick = { this.props.handleClick } />
+              <MenuButton
+                  handleClick = { this.props.handleClick }
+                  company={ this.props.company }
+                  product = { this.props.product }
+                  solution = { this.props.solution }
+                  contact = { this.props.contact }
+                  open = { this.props.open }
+              />
           </section>
       )
   }

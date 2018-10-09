@@ -19,6 +19,7 @@ class Solution extends Component {
                 <SectionTitleSmall
                     title = "Solution"
                     id = "solution-small-title"
+                    Ref = { this.props.solutionRef }
                 />
                 <Pentagon />
                 <ExplainModule

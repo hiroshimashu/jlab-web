@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 
 class MenuButton extends Component {
 
+
+
     render() {
+        console.log(this.props.open);
         return (
-            <div className= "nav-toggle"  id = "nav-toggle" style = {{zIndex: 1000}} onClick={this.props.handleClick}>
+            <div className= { this.props.open }  id = "nav-toggle" style = {{zIndex: 1000}} onClick={ this.props.handleClick }>
                 <div>
                     <span></span>
                     <span></span>
