@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ff3774db-9c3b-4e4f-852b-c39b6d5abfc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/AvEngine/av_engine.js" afterPath="$PROJECT_DIR$/src/Components/AvEngine/av_engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Mirror/mirror.js" afterPath="$PROJECT_DIR$/src/Components/Mirror/mirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Recruit/recruit.js" afterPath="$PROJECT_DIR$/src/Components/Recruit/recruit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Consulting/consultingSmall.js" afterPath="$PROJECT_DIR$/src/Components/Consulting/consultingSmall.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js" afterPath="$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,21 +23,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mirrorSmall.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Mirror/mirrorSmall.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="softwareConsulting.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="1914" column="8" lean-forward="true" selection-start-line="1914" selection-start-column="8" selection-end-line="1914" selection-end-column="8" />
+            <state relative-caret-position="275">
+              <caret line="1973" column="3" lean-forward="true" selection-start-line="1973" selection-start-column="3" selection-end-line="1973" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mirrorSmall.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Components/Mirror/mirrorSmall.js">
+      <file leaf-file-name="consultingSmall.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Consulting/consultingSmall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="160">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -84,10 +107,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Components/Common/explainModule.js" />
         <option value="$PROJECT_DIR$/src/Components/Contact/info.js" />
         <option value="$PROJECT_DIR$/src/Components/Header/logo.js" />
-        <option value="$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js" />
         <option value="$PROJECT_DIR$/src/Components/MIddleWare/middleWare.js" />
         <option value="$PROJECT_DIR$/src/SmallScreen/Components/KeyvisualSmall.js" />
         <option value="$PROJECT_DIR$/src/SmallScreen/Components/main.js" />
@@ -134,6 +155,8 @@
         <option value="$PROJECT_DIR$/src/Components/AvEngine/av_engine_small.js" />
         <option value="$PROJECT_DIR$/src/Components/Mirror/mirror.js" />
         <option value="$PROJECT_DIR$/src/Components/Mirror/mirrorSmall.js" />
+        <option value="$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js" />
+        <option value="$PROJECT_DIR$/src/Components/Consulting/consultingSmall.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
@@ -279,6 +302,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Header" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jlab-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jlab-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Consulting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,12 +519,12 @@
       <workItem from="1538628060571" duration="4399000" />
       <workItem from="1538666842472" duration="21749000" />
       <workItem from="1538746717510" duration="13863000" />
-      <workItem from="1538994392126" duration="33677000" />
+      <workItem from="1538994392126" duration="35016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247996000" />
+    <option name="totallyTimeSpent" value="249335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1316" height="877" extended-state="0" />
@@ -531,25 +576,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SmallScreen/Components/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/KeyVisual/keyMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/KeyVisual/keyVisual.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -961,21 +992,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="1914" column="8" lean-forward="true" selection-start-line="1914" selection-start-column="8" selection-end-line="1914" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Mirror/mirrorSmall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="233">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Consulting/softwareConsulting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Consulting/consultingSmall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="1973" column="3" lean-forward="true" selection-start-line="1973" selection-start-column="3" selection-end-line="1973" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 import React from "react";
 import consulting from "../../static/software_consulting.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
+import ConsultingSmall from "./consultingSmall";
 
 
 
@@ -8,7 +9,7 @@ const SoftwareConsulting = () => {
         return (
             <div>
               <HeaderDetail/>
-              <section style = { styles.wrapper }>
+              <section style = { styles.wrapper } className="consulting-wrapper">
                 <div style = { styles.contentWrapper }>
                     <p style = { styles.drmTitle }>
                         ソフトウェア技術コンサル
@@ -53,6 +54,7 @@ const SoftwareConsulting = () => {
                     </p>
                 </div>
               </section>
+              <ConsultingSmall />
             </div>
         )
 }

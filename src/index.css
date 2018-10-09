@@ -420,6 +420,13 @@ a {
 
 
 
+/* ------------------------------- Consulting -------------------------------- */
+
+.consulting-wrapper-small {
+  display: none;
+}
+
+
 /* ---------------------------------- Small Screen -------------------------- */
 
 
@@ -1916,6 +1923,63 @@ a {
     font-weight: lighter;
     text-align: justify;
   }
+
+
+
+  /* -------------------- Consulting ---------------------------- */
+  .consulting-wrapper {
+    display: none;
+  }
+
+  .consulting-wrapper-small {
+    display: block;
+    width: 232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .consulting-explain-title-small {
+    width: 210px;
+    font-size : 23px;
+    line-height : 34.5px;
+    letter-spacing : 2.1px;
+    color : #74CEE2;
+    font-weight:lighter;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .consulting-explain-small {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color :#85A2BD;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .cosulting-img-wrapper-small {
+    margin-top: 42px;
+  }
+
+  .consulting-exmple-wrapper-small {
+    margin-top: 40px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color :#ffffff;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+
+
+
+
+
+
+
 
 
 
