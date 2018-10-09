@@ -186,6 +186,7 @@ a {
 
 .product {
   width: 805.243px;
+  height: 2299.873px;
 }
 
 #product {
@@ -199,6 +200,166 @@ a {
 .explain-wrapper-small {
   display: none;
 }
+
+/* ------------------------- Solution --------------------------------- */
+.solution-wrapper {
+  width: 857.957px;
+}
+
+.pentagon1 {
+  width: 577.471px;
+  position: absolute;
+  top: 200.067px;
+}
+
+.pentagon2 {
+  width: 800.957px;
+  position: absolute;
+  top: -20.252px;
+  left: 100px;
+}
+
+
+
+/* ---------------------- Contact ----------------------------- */
+.contact-wrapper {
+  position: relative;
+  width: 843.043px;
+  height: 1125.859px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.rectangle1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+}
+
+.rectangle2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+}
+
+
+/* -------------------------- Routez detail ---------------------------- */
+.routez-detail {
+  position: relative;
+  margin-top: 139.361px;
+  width: 601px;
+  height: 1691.769px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.routez-detail-title {
+  position: absolute;
+  font-size : 24px;
+  line-height : 30px;
+  letter-spacing : 4.22px;
+  color : #74CEE2;
+  font-weight: lighter;
+  left: 215.716px;
+}
+
+.routez-detail-explain {
+  display: block;
+  position: absolute;
+  width: 516.327px;
+  top: 60.966px;
+  left:51.403px;
+  font-size : 13px;
+  font-weight: lighter;
+  line-height : 28px;
+  letter-spacing : 2.25px;
+  color :#ABE1FA;
+  text-align: justify;
+}
+
+.routez-detail-explain-2 {
+ letter-spacing: 1.78px;
+}
+
+.routez-detail-explain-small {
+  display: none;
+}
+
+.routez-detail-img1-wrapper {
+  position: relative;
+  width: 110.894px;
+  top: 293.223px;
+  left: 253.161px;
+}
+
+.routez-detail-img1 {
+  width: 100%;
+  height:100%;
+}
+
+.routez-detail-img2 {
+  position: absolute;
+  width: 582.801px;
+  height: 656.506px;
+  top: 503.163px;
+}
+
+.routez-detail-img2-small {
+  display: none;
+}
+
+.demo-movie-title-wrapper {
+  position: absolute;
+  width: 208.389px;
+  top: 1283.011px;
+  fontSize : 18px;
+  line-height : 30px;
+  letter-spacing : 2.17px;
+  text-align: center;
+  left: 200.852px;
+  font-weight: lighter;
+}
+
+.demo-video-wrapper {
+  position: absolute;
+  width: 584.614px;
+  height: 329.979px;
+  top: 1361.191px;
+  left:16.301px;
+}
+
+.demo-video {
+  width:100%;
+}
+
+.routez-menu {
+  position: relative;
+  margin-top: 175.559px;
+  height: 2967.997px;
+  width: 653.177px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.routez-menu-title {
+  position: absolute;
+  font-family : Helvetica Neue, arial;
+  font-size : 31px;
+  font-weight:lighter;
+  letter-spacing : 4.19px;
+  color : #74CEE2;
+  left: 215.269px;
+}
+
+.zwave-cloud-wrapper-small {
+  display: none;
+}
+
 
 
 /* ---------------------------------- Small Screen -------------------------- */
@@ -453,6 +614,7 @@ a {
 
   .product {
      width: 232.8px;
+    height: 1960.32px;
   }
 
   #product {
@@ -617,11 +779,6 @@ a {
     text-align: justify;
   }
 
-
-
-
-
-
   .button-small {
     width: 100%;
     height: 30px;
@@ -635,6 +792,341 @@ a {
     -moz-border-radius : 17pt;
     -webkit-border-radius : 17pt;
   }
+
+
+
+  /* ------------------------- Solution --------------------------------- */
+  .solution-wrapper {
+    width: 232.5px;
+    margin-top: 199.5px;
+  }
+
+  #consulting {
+    margin-top: 73.76px;
+  }
+
+  .consulting-img-wrapper {
+    width: 153px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .consulting-img {
+    width: 100%;
+  }
+
+  .consulting-explain-title {
+    font-weight: lighter;
+    font-size: 20.5px;
+    margin-top: -105px;
+    line-height: 32.5px;
+    letter-spacing: 2px;
+    color : #FFFFFF;
+  }
+  .consulting-explain {
+    font-size : 13px;
+    margin-top: 10px;
+    line-height : 23.5px;
+    font-weight: lighter;
+    letter-spacing : 1.6px;
+    color : #ABE1FA;
+    text-align: justify;
+  }
+
+  .pentagon1 {
+    left: 0;
+    width: 298.845px;
+    position: absolute;
+    top: 100.067px;
+  }
+
+  .pentagon2 {
+    width: 277.45px;
+    left: 0;
+    position: absolute;
+    top: -20.252px;
+  }
+
+  #middle-ware {
+    margin-top: 111.323px;
+  }
+
+  .middleware-img-wrapper {
+    width: 156.81px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .middleware-explain-title {
+    font-weight: lighter;
+    font-size: 20.5px;
+    margin-top: -75px;
+    line-height: 32.5px;
+    letter-spacing: 2px;
+    color : #FFFFFF;
+  }
+
+  .middleware-explain {
+    font-size : 13px;
+    margin-top: 10px;
+    line-height : 23.5px;
+    font-weight: lighter;
+    letter-spacing : 1.6px;
+    color : #ABE1FA;
+    text-align: justify;
+  }
+
+
+  /* ---------------------- Contact ----------------------------- */
+  .contact-wrapper {
+    width: 281.54px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact-title {
+    position: absolute;
+    top: 146.64px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .rectangle1 {
+    top: 0px;
+  }
+  .rectangle2 {
+    top: 0px;
+  }
+
+
+
+  /* -------------------------- Routez detail ---------------------------- */
+  .routez-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+
+  .routez-detail {
+    position: relative;
+    margin-top: 104.42px;
+    width: 258.55px;
+    height: 937.46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .routez-detail-title {
+    position: relative;
+    font-size : 23px;
+    line-height : 30px;
+    letter-spacing : 3.1px;
+    color : #74CEE2;
+    font-weight: lighter;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    left: 0px;
+  }
+
+  .routez-detail-explain {
+    display: none;
+  }
+
+  .routez-detail-explain-small {
+    display: block;
+    position: relative;
+    font-size : 13px;
+    line-height : 23.5px;
+    letter-spacing : 2.23px;
+    color : #ABE1FA;
+    font-weight: lighter;
+    margin-top: 46.468px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+  }
+
+  .routez-detail-img1-wrapper {
+    position: relative;
+    width: 60px;
+    height: 55px;
+    top: 0px;
+    left: 0;
+    margin-top: 40.3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   .routez-detail-img1 {
+     width: 100%;
+     height:100%;
+   }
+
+  .routez-detail-img2 {
+    display: none;
+    position: relative;
+    width: 256px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .routez-detail-img2-small {
+    display: block;
+    position: relative;
+    width: 256px;
+    top: 0;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .demo-movie-title-wrapper {
+    position: relative;
+    margin-top: 50.86px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+
+  }
+  .demo-video-wrapper {
+    position: relative;
+    margin-top: 18px;
+    margin-left: -28.225px;
+    top: 0;
+    left: 0;
+    width: 315px;
+  }
+  .demo-video {
+    width: 100%
+  }
+
+  .routez-menu {
+    width: 245.55px;
+    margin-top: 223.04px;
+  }
+
+  .routez-menu-title {
+    position: relative;
+    font-family : Helvetica Neue, arial;
+    font-size : 23px;
+    font-weight:lighter;
+    letter-spacing : 4.19px;
+    color : #74CEE2;
+    text-align: center;
+    left: 0px;
+  }
+
+  .zwave-cloud-wrapper {
+    display: none;
+  }
+
+  .zwave-cloud-wrapper-small {
+    display: block;
+  }
+
+  .zwave-cloud-img-wrapper {
+    width: 119.445px;
+    height: 155.689px;
+    margin-top: 35.17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .zwave-cloud-main-wrapper {
+    width: 245.55px;
+    margin-top: -27px;
+  }
+
+  .zwave-cloud-main-title {
+    font-size : 20.5px;
+    font-weight:lighter;
+    letter-spacing : 2.2px;
+    color : #ffffff;
+  }
+
+  .zwave-cloud-main-explain {
+    margin-top: 20px;
+    font-size : 13px;
+    font-weight:lighter;
+    line-height: 23.5px;
+    letter-spacing : 3.2px;
+    color : #85A2BD;
+  }
+
+  .zwave-cloud-detail1-wrapper {
+    width: 245.55px;
+    margin-top: 27.3px;
+    border-bottom: 1px solid #698198;
+    height: 125px;
+  }
+
+  .zwave-cloud-detail1-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.65px;
+    color : #ffffff;
+  }
+
+  .zwave-cloud-detail1-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 3.25px;
+    color : #85A2BD;
+    margin-top: 14px;
+  }
+
+  .zwave-cloud-detail2-wrapper {
+    width: 245.55px;
+    margin-top: 26.5px;
+    border-bottom: 1px solid #698198;
+    height: 150px;
+  }
+
+  .zwave-cloud-detail2-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.65px;
+    color : #ffffff;
+  }
+
+  .zwave-cloud-detail2-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 3.25px;
+    color : #85A2BD;
+    margin-top: 14px;
+  }
+
+  .zwave-cloud-detail3-wrapper {
+    width: 245.55px;
+    margin-top: 26.5px;
+    border-bottom: 1px solid #698198;
+    height: 105px;
+  }
+
+  .zwave-cloud-detail3-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.65px;
+    color : #ffffff;
+  }
+
+  .zwave-cloud-detail3-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 3.25px;
+    color : #85A2BD;
+    margin-top: 14px;
+  }
+
+
+
+
+
 
 
 

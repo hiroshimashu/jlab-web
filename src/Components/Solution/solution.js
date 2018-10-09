@@ -4,15 +4,21 @@ import Pentagon from "./backgroundPentagon";
 import ExplainModule from "../Common/explainModule";
 import Consulting from "../../static/consulting.svg";
 import Embbed from "../../static/embbed.svg";
+import ExplainModuleSmall from "../Common/explainModuleSmall";
+import SectionTitleSmall from "../Common/sectionTitleSmall";
 
 class Solution extends Component {
     render() {
         return (
-            <section className="solution-wrapper" style = {{ position: "relative", width: "857.957px", height: "1057.54px", marginLeft: "auto", marginRight: "auto", }}>
+            <section className="solution-wrapper" style = {{ position: "relative", height: "1057.54px", marginLeft: "auto", marginRight: "auto", }}>
                 <SectionTitle
                     title = "Solution"
                     left = "calc(50% - 65.845px)"
                     Ref = { this.props.solutionRef }
+                />
+                <SectionTitleSmall
+                    title = "Solution"
+                    id = "solution-small-title"
                 />
                 <Pentagon />
                 <ExplainModule
@@ -38,6 +44,24 @@ class Solution extends Component {
                     title = "組み込みミドルウェア開発"
                     explain = "当社の研究開発から培われたものづくりの豊富なノウハウと技術力を生かし、様々なご要望にお答えいたします。"
                     to = "middleware"
+                />
+                <ExplainModuleSmall
+                    id = "consulting"
+                    moduleTitle = "ソフトウェア技術コンサル"
+                    imgWrapperClassName = "consulting-img-wrapper"
+                    src = { Consulting }
+                    explainTitle = "consulting-explain-title"
+                    explainMain = "consulting-explain"
+                    explain = "豊富な製品開発経験を生かし、製品に最適なソフトウェア構成を設計、仕様策定やその後の開発支援もお手伝いをします。"
+                />
+                <ExplainModuleSmall
+                    id = "middle-ware"
+                    moduleTitle = "組み込みミドルウェア開発"
+                    imgWrapperClassName = "middleware-img-wrapper"
+                    src = { Embbed }
+                    explainTitle = "middleware-explain-title"
+                    explainMain = "middleware-explain"
+                    explain = "当社の研究開発から培われたものづくりの豊富なノウハウと技術力を生かし、様々なご要望にお答えいたします。"
                 />
             </section>
         )

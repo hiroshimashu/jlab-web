@@ -13,7 +13,7 @@ import reverseMirror from "../../static/reverse_mirror.svg";
 class Product extends Component {
     render() {
         return (
-            <section className="product" style={{position: "relative", height: "2299.873px", marginLeft: "auto",marginRight: "auto"}}>
+            <section className="product" style={{position: "relative", marginLeft: "auto",marginRight: "auto"}}>
                 <SectionTitle
                     title="Product"
                     top="48px"

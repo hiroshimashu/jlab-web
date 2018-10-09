@@ -1,21 +1,22 @@
 import React from "react";
 import routezImgExplain from "../../static/RouteZ_Img_explanation.png";
 import routezExlain from "../../static/RouteZ_explain.png";
+import routezExplainSmall from "../../static/zwave_small.svg";
 import demo from "../../static/keyvisual_movie.mp4";
 import Fade from "react-reveal/Fade";
 
 
 const RouteZDetail = () => {
     return (
-        <section className="routez-detail" style = {{ position: "relative", marginTop: "139.361px",width:"601px", height: "1691.769px", marginLeft: "auto", marginRight: "auto"}}>
-            <p style = { styles.explainTitle }>
+        <section className="routez-detail">
+            <p className="routez-detail-title">
                 「RouteZ」とは?
             </p>
-            <div style = { styles.explainText }>
+            <div className = "routez-detail-explain">
                 <p>
                     RouteZはZ-Waveセンサデバイスを使用したIOTサービスを実現するため
                 </p>
-                <p style = {{ letterSpacing: "1.78px"}}>
+                <p className="routez-detail-explain-2">
                     のソフトウエアがすべて統合された開発プラットフォームです。本プラット
                 </p>
                 <p>
@@ -25,9 +26,17 @@ const RouteZDetail = () => {
                     開始することが可能です。
                 </p>
             </div>
-            <img src = { routezImgExplain } alt = "routez-img-explain" style = {styles.routezImg}/>
-            <img src = { routezExlain } alt = "routez-explain" style = {styles.routezExplain} />
-            <div　style = { styles.demoMovieTitle }>
+            <div className = "routez-detail-explain-small">
+                <p>
+                    RouteZはZ-Waveセンサデバイスを使用したIOTサービスを実現するためのソフトウエアがすべて統合された開発プラットフォームです。本プラットフォームを使用することによりお客様はわずかな工数で迅速にサービスを開始することが可能です。
+                </p>
+            </div>
+            <div className="routez-detail-img1-wrapper">
+                <img src = { routezImgExplain } alt = "routez-img-explain" className="routez-detail-img1"/>
+            </div>
+            <img src = { routezExlain } alt = "routez-explain" className="routez-detail-img2" />
+            <img src = { routezExplainSmall } alt = "routez-explain" className="routez-detail-img2-small" />
+            <div className="demo-movie-title-wrapper">
                     <p  style = { styles.demoMovieTitleText1 }>
                         RouteZ demo movie
                     </p>
@@ -35,13 +44,15 @@ const RouteZDetail = () => {
                         「From anywhere」
                     </p>
             </div>
-            <video
+            <div className="demo-video-wrapper">
+                <video
                 controls
                 muted
-                style = { styles.demoMovie }
                 src = { demo }
-            >
-            </video>
+                className="demo-video"
+                >
+                </video>
+            </div>
         </section>
     )
 }

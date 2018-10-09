@@ -10,16 +10,25 @@ class RouteZ extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isScrolled: false
+            isScrolled: false,
+            width: window.innerWidth
         }
+    }
+
+    handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
     }
 
     componentDidMount() {
         window.addEventListener('scroll', event => this.watchCurrentPosition(), true)
+        window.addEventListener('resize', this.handleResize);
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', event => this.watchCurrentPosition())
+        window.removeEventListener('resize', this.handleResize);
     }
 
     watchCurrentPosition() {
@@ -55,7 +64,7 @@ class RouteZ extends Component {
     render() {
         return (
             <div>
-                <HeaderDetail />
+                { this.state.width > 801  &&  <HeaderDetail />}
                 { this.state.isScrolled &&  <GoTop handleClick = { this.goTop } />}
                 <div className="routeZ-wrapper">
                     <RoutezDetail />

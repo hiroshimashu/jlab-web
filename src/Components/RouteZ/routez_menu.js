@@ -7,8 +7,8 @@ import Fade from "react-reveal/Fade";
 
 const RoutezMenu = () => {
     return (
-        <section style = { styles.routezMenu} className = "routez-menu">
-            <p className="route-z-title" style = { styles.routezMenuTitle }>
+        <section className = "routez-menu">
+            <p className="routez-menu-title">
                     RouteZ Menu
             </p>
             <ZwaveCloud />

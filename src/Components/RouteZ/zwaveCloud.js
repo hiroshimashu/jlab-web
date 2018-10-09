@@ -3,6 +3,7 @@ import zwaveCloud from "../../static/zwave_cloud.svg";
 
 const ZwaveCloud = () => {
     return (
+    <div>
         <div className = "zwave-cloud-wrapper" style = { styles.cloudWrapper }>
             <img
                     src = { zwaveCloud }
@@ -62,6 +63,50 @@ const ZwaveCloud = () => {
                 </div>
               </div>
         </div>
+        <div className="zwave-cloud-small-wrapper">
+            <div
+                className = "zwave-cloud-img-wrapper"
+            >
+               <img
+                   src = { zwaveCloud }
+                   className = "zwave-cloud-img"
+                   alt = "zwave-cloud-img"
+               />
+            </div>
+            <div className="zwave-cloud-main-wrapper">
+                <p className="zwave-cloud-main-title">
+                    Z-WaveクラウドGW
+                </p>
+                <p className="zwave-cloud-main-explain">
+                    Z-Waveデバイスからの様々な状態や値をリアルタイムに収集するためのサーバー用ソフトウェアです。
+                </p>
+            </div>
+            <div className="zwave-cloud-detail1-wrapper">
+                <p className="zwave-cloud-detail1-title">
+                    シナリオ自動制御
+                </p>
+                <p className="zwave-cloud-detail1-main">
+                    予め登録したシナリオに従い、自動的にセンサーを制御する機能が提供出来ます。
+                </p>
+            </div>
+            <div className="zwave-cloud-detail2-wrapper">
+                <p className="zwave-cloud-detail2-title">
+                    スマートフォン連携
+                </p>
+                <p className="zwave-cloud-detail2-main">
+                    スマートフォンとデータ連携し、スマートフォンか隠しZ-Waveデバイスの状態の確認やコントロールを行う機能を提供出来ます。
+                </p>
+            </div>
+            <div className="zwave-cloud-detail3-wrapper">
+                <p className="zwave-cloud-detail3-title">
+                    外部サーバー間連携機能
+                </p>
+                <p className="zwave-cloud-detail3-main">
+                    他のサーバーとの連携を行うことが出来ます。
+                </p>
+            </div>
+        </div>
+    </div>
     )
 }
 
