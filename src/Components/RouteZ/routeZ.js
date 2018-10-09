@@ -5,6 +5,7 @@ import RoutezMenu from "./routez_menu";
 import RoutezDemo from "./routeZ_demo";
 import Footer from "../Common/footer";
 import HeaderDetail from "../Header/header_detail";
+import FooterSmall from "../Common/footer_small";
 
 class RouteZ extends Component {
     constructor(props) {
@@ -65,15 +66,13 @@ class RouteZ extends Component {
         return (
             <div>
                 { this.state.width > 801  &&  <HeaderDetail />}
-                { this.state.isScrolled &&  <GoTop handleClick = { this.goTop } />}
+                { this.state.isScrolled && this.state.width > 801 &&  <GoTop handleClick = { this.goTop } />}
                 <div className="routeZ-wrapper">
                     <RoutezDetail />
                     <RoutezMenu />
                     <RoutezDemo />
-                    <Footer
-                        height="379.596px"
-                        top="295.309px"
-                    />
+                    <Footer  height="379.596px" top="295.309px" />
+                    <FooterSmall top="177.25px" height = "37px"/>
                 </div>
             </div>
         )

@@ -1,9 +1,11 @@
 import React from "react";
 import demokit from "../../static/demo_kit.svg";
+import demokitSmall from "../../static/demokit_samll.svg";
 import Fade from "react-reveal/Fade";
 
 const DemoKit = () => {
     return (
+    <div>
           <section className =  "routez-demokit" style = { styles.demokit}>
             <p className = "routez-demokit-title" style = { styles.demokitTitle }>
                RouteZ デモキット
@@ -39,6 +41,26 @@ const DemoKit = () => {
                 </p>
             </a>
           </section>
+          <section className="routez-demokit-small">
+              <p className = "routez-demokit-title-small">
+                  RouteZ デモキット
+              </p>
+              <div className = "demokit-text-small">
+                  <p>
+                      RouteZデモキットはZ-Wave用IOTサービス用開発プラットフォームである[RouteZ]の機能を期間限定でご評価いただけるキットです。すべてプリセットされた状態でお渡しいたしますのでお手持ちのスマートフォン等からすぐにでもセンサ類のコントロールをお試しいただけます。
+                  </p>
+              </div>
+              <div className="info-wrapper-small">
+                  <img src = {demokitSmall} alt = "demo-kit-small" className="info-img"/>
+              </div>
+              <a href = "mailto:info@jlabs.com">
+                  <p className="info-address">
+                      info@jlabs.com
+                  </p>
+              </a>
+          </section>
+    </div>
+
     )
 }
 

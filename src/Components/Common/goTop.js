@@ -6,7 +6,7 @@ import ScrollUpButton from "react-scroll-up-button";
 const GoTop = (props) => {
     return (
       <ScrollUpButton>
-        <div  style = {{
+        <div  className="go-top" style = {{
             position: "fixed",
             width: "54px",
             height: "54px",

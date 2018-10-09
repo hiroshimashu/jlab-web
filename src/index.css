@@ -368,7 +368,15 @@ a {
   display: block;
 }
 
+.zwave-home-wrapper-small {
+  display: none;
+}
+
 .zwave-device-wrapper-small  {
+  display: none;
+}
+
+.routez-demokit-small {
   display: none;
 }
 
@@ -389,6 +397,14 @@ a {
   }
   .menu-wrapper {
     display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer-small {
+    display: block;
   }
 
   .nav-toggle {
@@ -918,6 +934,10 @@ a {
     width: 100%;
   }
 
+  .routez-menu {
+    height: 3113px;
+  }
+
 
   .routez-detail {
     position: relative;
@@ -1406,9 +1426,49 @@ a {
     margin-top: 36.2px;
   }
 
+  .routez-demokit {
+    display: none;
+  }
+  .routez-demokit-small {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 256px;
+    width: 245.55px;
+    display: block;
+  }
+  .routez-demokit-title-small {
+    position: relative;
+    font-family : Helvetica Neue, arial;
+    font-size : 23px;
+    font-weight:lighter;
+    letter-spacing : 3.2px;
+    color : #74CEE2;
+    text-align: center;
+  }
 
+  .demokit-text-small {
+    margin-top: 20px;
+    font-size : 16px;
+    font-weight:lighter;
+    line-height: 32.5px;
+    letter-spacing : 1.6px;
+    color : #ffffff;
+    text-align: justify;
+  }
 
-
+  .info-wrapper-small {
+    width: 245.55px;
+    margin-top: 38.5px;
+  }
+  .info-address {
+    font-size: 19.5px;
+    letter-spacing: 3.4px;
+    color: #FFFFFF;
+    margin-top: 32.5px;
+    font-weight: lighter;
+    text-align: center;
+  }
 
 
 
