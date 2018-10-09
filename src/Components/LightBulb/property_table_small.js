@@ -7,8 +7,8 @@ const PropertyTable = () => {
                 <tbody>
                 <tr>
                     <td style = {{ backgroundColor:"rgba(116,206,226, 0.2)", width:"85.4px", height:"28px", fontSize:"6.5px"}} >無線方式</td>
-                    <td style = {{ width: "61.666px", fontSize:"6.5px" }}>共通</td>
-                    <td style = {{ fontSize:"6.5px"}}>Z-wave(920Mhz帯無線）</td>
+                    <td style = {{ width: "37.5px", fontSize:"6.5px" }}>共通</td>
+                    <td style = {{ fontSize:"6.5px", width: "181.5px"}}>Z-wave(920Mhz帯無線）</td>
                 </tr>
                 <tr>
                     <td style = {{ backgroundColor:"rgba(116,206,226, 0.2)", fontSize:"6.5px", width:"85.4px", }}>光色</td>
@@ -483,7 +483,7 @@ const PropertyTable = () => {
                             </p>
                         </div>
                     </td>
-                    <td  style = {{ width: "61.666px" }}>
+                    <td  style = {{ width: "61.666px", fontSize:"6.5px" }}>
                         共通
                     </td>
                     <td>

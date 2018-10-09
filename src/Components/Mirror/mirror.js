@@ -1,12 +1,52 @@
-import React from "react";
+import React, { Component } from "react";
 import mirror from "../../static/mirror_fix.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
 import MirrorSmall from "./mirrorSmall";
+import MenuScreenDetail from "../Menu/menuScreenDetail";
+import Header from "../Header/header";
 
-const Mirror = () => {
+class Mirror extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isScrolled: false,
+            isOpen: false,
+            open: null,
+            width: window.innerWidth
+        }
+    }
+
+    handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
+    }
+
+    handleClick = (e) => {
+        if(this.state.open === null) {
+            this.setState(() => {
+                return {
+                    open: "open",
+                    isOpen: true
+                }
+            })
+        } else {
+            this.setState(() => {
+                return {
+                    open: null,
+                    isOpen: false
+                }
+            })
+        }
+    }
+
+
+    render() {
     return (
         <div>
-           <HeaderDetail/>
+            <MenuScreenDetail open = { this.state.open }  handleClick = { this.handleClick }/>
+            { this.state.width > 801  &&  <HeaderDetail />}
+            { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick } open = { this.state.open  }/> }
            <section style = { styles.wrapper } className="mirror-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
@@ -57,7 +97,7 @@ const Mirror = () => {
           </section>
           <MirrorSmall />
         </div>
-    )
+    )}
 }
 
 const styles = {

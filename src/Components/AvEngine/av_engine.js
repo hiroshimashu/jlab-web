@@ -1,13 +1,52 @@
-import React from "react";
+import React, { Component } from "react";
 import HeaderDetail from "../Header/header_detail";
 import dawEngine from "../../static/daw_engine.svg";
 import AvEngineSmall from "./av_engine_small";
+import MenuScreenDetail from "../Menu/menuScreenDetail";
+import Header from "../Header/header";
 
-const AvEngine = () => {
+class AvEngine extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isScrolled: false,
+            isOpen: false,
+            open: null,
+            width: window.innerWidth
+        }
+    }
+
+    handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
+    }
+
+    handleClick = (e) => {
+        if(this.state.open === null) {
+            this.setState(() => {
+                return {
+                    open: "open",
+                    isOpen: true
+                }
+            })
+        } else {
+            this.setState(() => {
+                return {
+                    open: null,
+                    isOpen: false
+                }
+            })
+        }
+    }
+
+    render() {
     return (
       <div>
-        <HeaderDetail />
-        <section style = { styles.wrapper } className="av-engine-wrapper">
+          <MenuScreenDetail open = { this.state.open }  handleClick = { this.handleClick }/>
+          { this.state.width > 801  &&  <HeaderDetail />}
+          { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick } open = { this.state.open  }/> }
+          <section style = { styles.wrapper } className="av-engine-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
                     「DRM対応AVプレイヤーエンジン」とは？
@@ -38,7 +77,7 @@ const AvEngine = () => {
         </section>
         <AvEngineSmall />
       </div>
-    )
+    )}
 }
 
 const styles = {

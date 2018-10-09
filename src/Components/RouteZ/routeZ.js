@@ -7,7 +7,7 @@ import Footer from "../Common/footer";
 import HeaderDetail from "../Header/header_detail";
 import Header from "../Header/header";
 import FooterSmall from "../Common/footer_small";
-import MenuScreen from "../Menu/menuScreen";
+import MenuScreenDetail from "../Menu/menuScreenDetail";
 
 class RouteZ extends Component {
     constructor(props) {
@@ -15,6 +15,7 @@ class RouteZ extends Component {
         this.state = {
             isScrolled: false,
             isOpen: false,
+            open: null,
             width: window.innerWidth
         }
     }
@@ -26,9 +27,21 @@ class RouteZ extends Component {
     }
 
     handleClick = (e) => {
-        this.setState(() => {
-            return {open: !this.state.open}
-        });
+        if(this.state.open === null) {
+          this.setState(() => {
+            return {
+                open: "open",
+                isOpen: true
+            }
+          })
+        } else {
+            this.setState(() => {
+                return {
+                    open: null,
+                    isOpen: false
+                }
+            })
+        }
     }
 
     componentDidMount() {
@@ -74,9 +87,9 @@ class RouteZ extends Component {
     render() {
         return (
             <div>
-                { this.state.open && <MenuScreen /> }
+                <MenuScreenDetail open = { this.state.open }  handleClick = { this.handleClick }/>
                 { this.state.width > 801  &&  <HeaderDetail />}
-                { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick }/> }
+                { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick } open = { this.state.open  } /> }
                 { this.state.isScrolled && this.state.width > 801 &&  <GoTop handleClick = { this.goTop } />}
                 <div className="routeZ-wrapper">
                     <RoutezDetail />

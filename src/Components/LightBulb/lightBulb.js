@@ -1,14 +1,55 @@
-import React from "react";
+import React, { Component } from "react";
 import lightBulb from "../../static/light_bulb_detail.png";
 import　SectionTitleDetail from "../Common/sectionTitleDetail";
 import HeaderDetail from "../../Components/Header/header_detail";
 import LightBulbSmall from "./lightBulbSmall";
+import MenuScreenDetail from "../Menu/menuScreenDetail";
+import Header from "../Header/header";
 
-const LightBulb = () => {
+
+class LightBulb extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isScrolled: false,
+            isOpen: false,
+            open: null,
+            width: window.innerWidth
+        }
+    }
+
+    handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
+    }
+
+    handleClick = (e) => {
+        if(this.state.open === null) {
+            this.setState(() => {
+                return {
+                    open: "open",
+                    isOpen: true
+                }
+            })
+        } else {
+            this.setState(() => {
+                return {
+                    open: null,
+                    isOpen: false
+                }
+            })
+        }
+    }
+
+
+    render() {
     return (
         <div>
-        <HeaderDetail/>
-        <section className="light-bulb-wrapper" style = {{position: "relative", marginTop: "137.775px", height:"1880.463px"}}>
+            <MenuScreenDetail open = { this.state.open }  handleClick = { this.handleClick }/>
+            { this.state.width > 801  &&  <HeaderDetail />}
+            { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick } open = { this.state.open  } /> }
+            <section className="light-bulb-wrapper" style = {{position: "relative", marginTop: "137.775px", height:"1880.463px"}}>
             <SectionTitleDetail
                 title = "Z-Wave LED電球 Rocket Bulb"
                 top = "0px"
@@ -653,7 +694,7 @@ const LightBulb = () => {
         </section>
         <LightBulbSmall />
         </div>
-    )
+    )}
 }
 
 const styles = {

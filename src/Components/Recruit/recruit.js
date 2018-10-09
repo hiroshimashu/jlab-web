@@ -1,12 +1,52 @@
-import React from "react";
+import React, { Component } from "react";
 import jsonInfo from "../../static/jobs_info.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
 import RecruitSmall from "./recruitSmall";
+import MenuScreenDetail from "../Menu/menuScreenDetail";
+import Header from "../Header/header";
 
-const Recruit = () => {
+class Recruit extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isScrolled: false,
+            isOpen: false,
+            open: null,
+            width: window.innerWidth
+        }
+    }
+
+    handleResize = (e) => {
+        this.setState(() => {
+            return {width: window.innerWidth}
+        });
+    }
+
+    handleClick = (e) => {
+        if(this.state.open === null) {
+            this.setState(() => {
+                return {
+                    open: "open",
+                    isOpen: true
+                }
+            })
+        } else {
+            this.setState(() => {
+                return {
+                    open: null,
+                    isOpen: false
+                }
+            })
+        }
+    }
+
+
+    render() {
     return (
         <div>
-          <HeaderDetail/>
+            <MenuScreenDetail open = { this.state.open }  handleClick = { this.handleClick }/>
+            { this.state.width > 801  &&  <HeaderDetail />}
+            { this.state.width <= 801 && <Header handleResize = { this.handleResize } handleClick = { this.handleClick } open = { this.state.open  } /> }
           <section className="recruit-wrapper" style = {{
             position: "relative",
             marginTop: "149.648px",
@@ -110,7 +150,7 @@ const Recruit = () => {
           </section>
           <RecruitSmall />
         </div>
-    )
+    )}
 }
 
 const styles = {

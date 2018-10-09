@@ -21,14 +21,17 @@ class AppContainer extends Component {
         console.log(this.props.location.state);
         if(this.props.location.state) {
             const { where } = this.props.location.state;
+
             if( where === "company") {
                 scrollToComponent(this.company, {offset: 70, align: "top", duration: 100})
             } else if (where === "product") {
                 scrollToComponent(this.product, {offset: 0, align: "top", duration: 100})
             } else if (where === "solution") {
                 scrollToComponent(this.solution, {offset: 0, align: "top", duration: 100})
-            } else {
+            } else if (where === "contact") {
                 scrollToComponent(this.contact, {offset: 0, align: "top", duration: 100})
+            } else {
+                scrollToComponent(this.news, {offset: 0, align: "top", duration: 100})
             }
         }
     }
