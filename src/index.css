@@ -74,6 +74,14 @@ a {
   display: none;
 }
 
+.logo-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 41.716px;
+  width:60.523px;
+  z-index: 1;
+}
+
 
 
 /* ----------------------------------- Key-visual ------------------------------- */
@@ -260,6 +268,43 @@ a {
   height: 100%;
   top: 100px;
 }
+
+.contact-info-wrapper-small {
+  display: none;
+}
+
+.map-container {
+  height: 288.786px;
+  width: 527.484px;
+  top:553.497px;
+  left: 140.532px;
+  position:absolute
+}
+
+.to-recruit {
+  position: absolute;
+  width:156.527px;
+  height: 34px;
+  top: 920.342px;
+  left: 250.794px;
+  background-color:rgba(116,206,226, 0.2);
+  border:none;
+  color: #74CEE2;
+  font-family: Helvetica Neue, Arial;
+  font-size:16.41px;
+  font-weight: lighter;
+  border-radius : 17pt;
+  z-index:1;
+}
+
+.facebook-logo {
+  position:absolute;
+  width: 61.002px;
+  height: 61.002px;
+  left: 511.541px;
+  top: 906.841px;
+}
+
 
 
 /* -------------------------- Routez detail ---------------------------- */
@@ -457,12 +502,22 @@ a {
   .header {
     height: 84.69px;
   }
+
   .menu-wrapper {
     display: none;
   }
 
   .menu-wrapper-detail {
     display: none;
+  }
+
+  .logo-wrapper {
+    position: fixed;
+    top: 15px;
+    left: 21.716px;
+    width: 32.5px;
+    height: 34.8px;
+    z-index: 1;
   }
 
 
@@ -476,16 +531,16 @@ a {
 
   .nav-toggle {
     display: block;
-    width: 56px;
-    height: 43px;
+    width: 28px;
+    height: 21.5px;
     position: fixed;
     margin-left: 88%;
-    margin-top: 18px;
+    margin-top: 21px;
     cursor: pointer;
   }
   .nav-toggle span {
     position: absolute;
-    height: 4px;
+    height: 1.9px;
     width: 100%;
     background: #74CEE2;
     left: 0;
@@ -495,10 +550,10 @@ a {
     top: 0;
   }
   #nav-toggle span:nth-child(2) {
-    top: 11px;
+    top: 10.25px;
   }
   #nav-toggle span:nth-child(3) {
-    top: 23px;
+    top: 19.3px;
   }
 
   #nav-toggle.open span:nth-child(1) {
@@ -563,6 +618,8 @@ a {
     top: 12.3px;
     margin-left: auto;
     margin-right: auto;
+    left: 0%;
+    transform: translateX(0%);
   }
 
   .jlab-logo {
@@ -1029,6 +1086,66 @@ a {
     top: 0px;
   }
 
+  .info-wrapper {
+    display: none;
+  }
+
+  .contact-info-wrapper-small {
+    position: absolute;
+    display: block;
+    top: 211px;
+    width: 232.5px;
+    font-size : 12.5px;
+    line-height : 25px;
+    letter-spacing : 2px;
+    font-weight: lighter;
+    color : #FFFFFF;
+  }
+
+  .company-name-small {
+    display: flex;
+  }
+
+  .since-small {
+    display: flex;
+  }
+
+  .principal-small {
+    display: flex;
+  }
+
+  .capital-small {
+    display: flex;
+  }
+
+  .address-small {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .map-container {
+    width: 235px;
+    height: 235px;
+    left: 23px;
+    top: 503.497px;
+  }
+
+  .to-recruit {
+    position: absolute;
+    width:131px;
+    height: 28.4px;
+    left: 75px;
+    top: 800.342px;
+  }
+
+  .facebook-logo {
+    position:absolute;
+    width: 39px;
+    height: 39px;
+    left: 121px;
+    top: 866.841px;
+  }
+
 
 
   /* -------------------------- Routez detail ---------------------------- */
@@ -1049,6 +1166,7 @@ a {
     height: 937.46px;
     margin-left: auto;
     margin-right: auto;
+
   }
 
 

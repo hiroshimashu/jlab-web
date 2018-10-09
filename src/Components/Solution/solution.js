@@ -53,6 +53,7 @@ class Solution extends Component {
                     explainTitle = "consulting-explain-title"
                     explainMain = "consulting-explain"
                     explain = "豊富な製品開発経験を生かし、製品に最適なソフトウェア構成を設計、仕様策定やその後の開発支援もお手伝いをします。"
+                    to = "/consulting"
                 />
                 <ExplainModuleSmall
                     id = "middle-ware"
@@ -62,6 +63,7 @@ class Solution extends Component {
                     explainTitle = "middleware-explain-title"
                     explainMain = "middleware-explain"
                     explain = "当社の研究開発から培われたものづくりの豊富なノウハウと技術力を生かし、様々なご要望にお答えいたします。"
+                    to = "middleware"
                 />
             </section>
         )

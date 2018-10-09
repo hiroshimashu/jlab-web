@@ -10,6 +10,7 @@ import FacebookLogo from "./facebook_logo";
 class Contact extends Component {
   render() {
       return (
+        <div>
           <section className="contact-wrapper" style = {{ position: "relative"}}>
               <Rectangle />
               <SectionTitle
@@ -27,6 +28,7 @@ class Contact extends Component {
               <ToRecruit />
               <FacebookLogo />
           </section>
+        </div>
       )
   }
 }

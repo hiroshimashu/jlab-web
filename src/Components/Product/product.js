@@ -93,6 +93,7 @@ class Product extends Component {
                     explainTitle = "routez-explain-title"
                     explainMain = "routez-explain"
                     explain ="「RouteZ」は世界で最も普及しているスマートホーム向けIOT無線技術であるZ-Waveのデバイスを制御・管理するためのソフトウエア開発キットです。"
+                    to = "/routez"
                 />
                 <ExplainModuleSmall
                     id = "gateway"
@@ -103,6 +104,7 @@ class Product extends Component {
                     explainTitle = "gateway-explain-title"
                     explainMain = "gateway-explain"
                     explain ="「Arena Box」はZ-Waveに対応したHOMEゲートウェイです。"
+                    to="/gateway"
                 />
                 <ExplainModuleSmall
                     id = "led-bulb"
@@ -113,6 +115,7 @@ class Product extends Component {
                     explainTitle = "bulb-explain-title"
                     explainMain = "bulb-explain"
                     explain ="「Rocket Bulb」は弊社開発による、Z-Wave対応のスマートLED電球です。"
+                    to="/led"
                 />
                 <ExplainModuleSmall
                     id = "av-player"
@@ -123,6 +126,7 @@ class Product extends Component {
                     explainTitle = "engine-explain-title"
                     explainMain = "engine-explain"
                     explain ="スマートフォン端末やSTB等のプラットフォーム上で映像・音声の再生を行う為の基本コンポーネントを搭載したソフトウェアです。"
+                    to="/daw"
                 />
                 <ExplainModuleSmall
                     id = "mirror"
@@ -133,6 +137,7 @@ class Product extends Component {
                     explainTitle = "mirror-explain-title"
                     explainMain = "mirror-explain"
                     explain ="お客様の情報機器が、簡単にスマートフォンで操作できるようになる仕組みをご提供します。"
+                    to="/mirror"
                 />
             </section>
         )

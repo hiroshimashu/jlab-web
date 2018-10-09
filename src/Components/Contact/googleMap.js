@@ -27,7 +27,7 @@ const googleMap = () => {
             <MapWithAMarker
                 googleMapURL= "https://maps.googleapis.com/maps/api/js?key=AIzaSyC7asYcehlowNnBcD47M-veJp9i21snaqg&v=3.exp&libraries=geometry,drawing,places"
                 loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `288.786px`, width: "527.484px", top:"553.497px", left: "140.532px", position:"absolute"}} />}
+                containerElement={<div className="map-container"  />}
                 mapElement={<div style={{ height: `100%` }} />}
             />
         </Fade>

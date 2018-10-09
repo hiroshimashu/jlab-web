@@ -6,6 +6,7 @@ import Product from"./Components/Product/product";
 import Solution from  "./Components/Solution/solution";
 import Contact from "./Components/Contact/contact";
 import Footer from "./Components/Common/footer";
+import FooterSmall from "./Components/Common/footer_small";
 
 
 class App extends Component {
@@ -88,6 +89,7 @@ class App extends Component {
                 height = "301.76px"
                 top = "215.473px"
             />
+            { this.state.width <= 800 && <FooterSmall top="0px" height = "37px" /> }
         </div>
     )
   }

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const logo = () => {
     return (
-        <div className="logo-wrapper" style = {styles.logoWrapper}>
+        <div className="logo-wrapper">
             <Link to = "/">
-                <img className = "logo" alt = "jlab-logo-small"  style = {styles.logo} src = { jlab } />
+                <img className = "logo" alt = "jlab-logo-small"  style = { styles.logo } src = { jlab } />
             </Link>
         </div>
     );
