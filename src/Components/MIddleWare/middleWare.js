@@ -1,6 +1,7 @@
 import React from "react";
 import consulting from "../../static/software_consulting.svg";
 import middleWare from "../../static/middleware.png";
+import MiddlewareSmall from "./middlewareSmall";
 import HeaderDetail from "../../Components/Header/header_detail";
 
 
@@ -8,7 +9,7 @@ const MiddleWare = () => {
     return (
         <div>
           <HeaderDetail/>
-          <section style = { styles.wrapper }>
+          <section style = { styles.wrapper } className="middleware-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
                     組込みミドルウェア開発
@@ -48,6 +49,7 @@ const MiddleWare = () => {
                 </p>
             </div>
           </section>
+          <MiddlewareSmall />
         </div>
     )
 }
