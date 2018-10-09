@@ -427,6 +427,16 @@ a {
 }
 
 
+
+
+/* ----------------------------- Gateway --------------------------------- */
+
+.gateway-wrapper-small {
+  display: none;
+}
+
+
+
 /* ---------------------------------- Small Screen -------------------------- */
 
 
@@ -1972,6 +1982,124 @@ a {
     font-weight: lighter;
     text-align: justify;
   }
+
+
+
+  /* ----------------------------- Gateway ---------------------- */
+  .gateway-wrapper {
+    display: none;
+  }
+
+  .gateway-wrapper-small {
+    display: block;
+    width: 232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gateway-explain-title-small {
+    width: 178px;
+    font-size : 23px;
+    line-height : 34.5px;
+    letter-spacing : 2.1px;
+    color : #74CEE2;
+    font-weight:lighter;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gateway-explain-wrapper {
+    margin-top: 14px;
+    font-size : 13px;
+    line-height : 22.03px;
+    letter-spacing : 2.3px;
+    color :#85A2BD;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .gateway-img-wrapper-small {
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gateway-img-small {
+    width: 100%;
+  }
+
+  .gateway-function-wrapper-small {
+    margin-top: 21.2px;
+  }
+
+  .gateway-function-title-small {
+    font-size : 16.5px;
+    letter-spacing : 4.27px;
+    color : #85A2BD;
+    font-weight: lighter;
+  }
+
+  .gateway-function-main-small {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 20.03px;
+    letter-spacing : 2.1px;
+    color :#ffffff;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .gateway-price-wrapper {
+    margin-top: 40px;
+  }
+
+  .gateway-price-title-small {
+    font-size : 16.5px;
+    letter-spacing : 4.27px;
+    color : #85A2BD;
+    font-weight: lighter;
+  }
+
+  .gateway-price-main-small {
+    margin-top: 12px;
+    font-size : 10.5px;
+    line-height : 20.03px;
+    letter-spacing : 2.1px;
+    color :#ffffff;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .gateway-start-wrapper {
+    margin-top: 40px;
+  }
+
+  .gateway-start-title-small {
+    font-size : 16.5px;
+    letter-spacing : 4.27px;
+    color : #85A2BD;
+    font-weight: lighter;
+  }
+
+  .gateway-start-main-small {
+    margin-top: 12px;
+    font-size : 10.5px;
+    line-height : 20.03px;
+    letter-spacing : 2.1px;
+    color :#ffffff;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 

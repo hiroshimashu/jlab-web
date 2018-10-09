@@ -1,12 +1,13 @@
 import React from "react";
 import gateway from "../../static/gateway.png";
 import HeaderDetail from "../../Components/Header/header_detail";
+import GatewaySmall from "./gatewaySmall";
 
 const Gateway = () => {
     return (
         <div>
         <HeaderDetail/>
-        <section style = { styles.wrapper }>
+        <section style = { styles.wrapper } className="gateway-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
                     Z-Wave HOME ゲートウェイ　Arena Box
@@ -123,6 +124,7 @@ const Gateway = () => {
                 </p>
             </div>
         </section>
+        <GatewaySmall/>
         </div>
     )
 }
