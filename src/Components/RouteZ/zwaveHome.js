@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const ZwaveHome = () => {
     return (
+    <div>
         <div className = "zwave-home-wrapper" style = { styles.homeWrapper }>
             <img
                 src = { home }
@@ -62,6 +63,47 @@ const ZwaveHome = () => {
                     </button>
              </Link>
         </div>
+        <div className="zwave-home-wrapper-small">
+            <div
+                className = "zwave-home-img-wrapper"
+            >
+                <img
+                    src = { home }
+                    className = "zwave-home-img"
+                    alt = "zwave-home-img"
+                />
+            </div>
+            <div className="zwave-home-main-wrapper">
+                <p className="zwave-home-main-title">
+                    Z-Wave Home ゲートウェイ
+                </p>
+                <p className="zwave-home-main-explain">
+                    ゲートウェイデバイス上で動作するクライアントソフトウェアです。Z-Wave対応のゲートウェイデバイスに組み込んで使用することが可能です。
+                </p>
+            </div>
+            <div className="zwave-home-detail1-wrapper">
+                <p className="zwave-home-detail1-title">
+                    Z-WaveクラウドGW連携
+                </p>
+                <p className="zwave-home-detail1-main">
+                    Z-WaveクラウドGWと連携するための各種機能を提供いたします。
+                </p>
+            </div>
+            <div className="zwave-home-detail2-wrapper">
+                <p className="zwave-home-detail2-title">
+                    ソリューション提供
+                </p>
+                <p className="zwave-home-detail2-main">
+                    お客様独自のZ-Waveゲートウェイのソフトウェア開発を承ります。
+                </p>
+            </div>
+            <Link to="/gateway">
+                <button　className="gateway-link">
+                    Z-Wave HOME ゲートウェイ Arena Box 詳細ページへ
+                </button>
+            </Link>
+        </div>
+    </div>
     )
 }
 

@@ -1,9 +1,11 @@
 import React from "react";
 import device from "../../static/zwave_device.svg";
+import deviceSmall from "../../static/zwave_device_small.svg";
 import { Link } from "react-router-dom";
 
 const ZwaveDevice = () => {
     return (
+    <div>
         <div className = "zwave-device-wrapper" style = { styles.deviceWrapper }>
             <img
                 src = { device }
@@ -41,6 +43,40 @@ const ZwaveDevice = () => {
                     </button>
             </Link>
         </div>
+        <div className="zwave-device-wrapper-small">
+            <div
+                className = "zwave-device-img-wrapper"
+            >
+                <img
+                    src = { deviceSmall }
+                    className = "zwave-device-img"
+                    alt = "zwave-device-img"
+                />
+            </div>
+            <div className="zwave-device-main-wrapper">
+                <p className="zwave-device-main-title">
+                    Z-Wave デバイス
+                </p>
+                <p className="zwave-device-main-explain">
+                    ゲートウェイデバイス上で動作するクライアントソフトウェアです。Z-Wave対応のゲートウェイデバイスに組み込んで使用することが可能です。
+                </p>
+            </div>
+            <div className="zwave-device-detail1-wrapper">
+                <p className="zwave-device-detail1-title">
+                    ソリューション提供
+                </p>
+                <p className="zwave-device-detail1-main">
+                    お客様独自のZ-Waveデバイスのソフトウェア開発を承ります
+                </p>
+            </div>
+            <Link to = "/led">
+                <button className="led-link">
+                    Z-Wave LED 電球<br/>
+                    Rocket Bulb 詳細ページへ
+                </button>
+            </Link>
+        </div>
+    </div>
     )
 }
 

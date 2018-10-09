@@ -356,7 +356,19 @@ a {
   left: 215.269px;
 }
 
-.zwave-cloud-wrapper-small {
+.zwave-cloud-small-wrapper {
+  display: none;
+}
+
+.zwave-phone-wrapper-small {
+  display: none;
+}
+
+.zwave-device-wrapper {
+  display: block;
+}
+
+.zwave-device-wrapper-small  {
   display: none;
 }
 
@@ -1021,9 +1033,10 @@ a {
     display: none;
   }
 
-  .zwave-cloud-wrapper-small {
+  .zwave-cloud-small-wrapper {
     display: block;
   }
+
 
   .zwave-cloud-img-wrapper {
     width: 119.445px;
@@ -1122,6 +1135,287 @@ a {
     color : #85A2BD;
     margin-top: 14px;
   }
+
+  .zwave-phone-wrapper {
+    display: none;
+  }
+
+  .zwave-phone-wrapper-small {
+    display: block;
+    margin-top: 164px;
+  }
+
+  .zwave-phone-main-wrapper {
+    margin-top: -57px;
+  }
+
+  .zwave-phone-main-title {
+    font-size : 20.5px;
+    font-weight:lighter;
+    letter-spacing : 1px;
+    color : #ffffff;
+  }
+
+  .zwave-phone-img-wrapper {
+    width: 110.5px;
+    height: 220px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .zwave-phone-img {
+    width: 100%;
+  }
+
+  .zwave-phone-main-explain {
+    margin-top: 20px;
+    font-size : 13px;
+    font-weight:lighter;
+    line-height: 23.5px;
+    letter-spacing : 3.2px;
+    color : #85A2BD;
+  }
+
+  .zwave-phone-detail1-wrapper {
+    width: 245.55px;
+    margin-top: 27.3px;
+    border-bottom: 1px solid #698198;
+    height: 150px;
+  }
+
+  .zwave-phone-detail1-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.8px;
+    color : #ffffff;
+  }
+
+  .zwave-phone-detail1-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 2.95px;
+    color : #85A2BD;
+    margin-top: 14px;
+    text-align: justify;
+  }
+
+  .zwave-phone-detail2-wrapper {
+    width: 245.55px;
+    margin-top: 27.3px;
+    border-bottom: 1px solid #698198;
+    height: 105px;
+  }
+
+  .zwave-phone-detail2-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.8px;
+    color : #ffffff;
+  }
+
+  .zwave-phone-detail2-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 2.95px;
+    color : #85A2BD;
+    margin-top: 14px;
+    text-align: justify;
+  }
+
+  .zwave-home-wrapper {
+    display: none;
+  }
+
+  .zwave-home-wrapper-small {
+    display: block;
+    margin-top: 164px;
+  }
+
+  .zwave-home-img-wrapper {
+    width: 100.5px;
+    height: 112px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .zwave-home-img {
+    width: 100%;
+  }
+
+
+  .zwave-home-main-wrapper {
+  }
+
+  .zwave-home-main-title {
+    font-size : 20.5px;
+    font-weight:lighter;
+    letter-spacing : 2.1px;
+    color : #ffffff;
+  }
+
+  .zwave-home-main-explain {
+    margin-top: 20px;
+    font-size : 13px;
+    font-weight:lighter;
+    line-height: 23.5px;
+    letter-spacing : 3.2px;
+    color : #85A2BD;
+    text-align: justify;
+  }
+
+  .zwave-home-detail1-wrapper {
+    width: 245.55px;
+    margin-top: 35.5px;
+    border-bottom: 1px solid #698198;
+    height: 110px;
+  }
+
+  .zwave-home-detail1-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.8px;
+    color : #ffffff;
+  }
+
+  .zwave-home-detail1-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 2.1px;
+    color : #85A2BD;
+    margin-top: 14px;
+    text-align: justify;
+  }
+
+  .zwave-home-detail2-wrapper {
+    width: 245.55px;
+    margin-top: 27.3px;
+    border-bottom: 1px solid #698198;
+    height: 105px;
+  }
+
+  .zwave-home-detail2-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.8px;
+    color : #ffffff;
+  }
+
+  .zwave-home-detail2-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 2.55px;
+    color : #85A2BD;
+    margin-top: 14px;
+    text-align: justify;
+  }
+
+  .gateway-link {
+    width: 245.55px;
+    height: 61px;
+    background-color:rgba(116,206,226, 0.2);
+    color: #74CEE2;
+    border: none;
+    font-family: Helvetica Neue, Arial;
+    font-size:12.5px;
+    letter-spacing:2.24px;
+    font-weight: lighter;
+    border-radius :10pt;
+    z-index:1;
+    margin-top: 36.2px;
+  }
+
+  .zwave-device-wrapper {
+    display: none;
+  }
+
+  .zwave-device-wrapper-small  {
+    display: block;
+    margin-top: 144.05px;
+  }
+
+  .zwave-device-img-wrapper {
+    width: 118.5px;
+    height: 233.5px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .zwave-device-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .zwave-device-main-wrapper {
+    margin-top: -75px;
+  }
+
+  .zwave-device-main-title {
+    font-size : 20.5px;
+    font-weight:lighter;
+    letter-spacing : 2.1px;
+    color : #ffffff;
+  }
+
+  .zwave-device-main-explain {
+    margin-top: 20px;
+    font-size : 13px;
+    font-weight:lighter;
+    line-height: 23.5px;
+    letter-spacing : 2.5px;
+    color : #85A2BD;
+    text-align: justify;
+  }
+
+  .zwave-device-detail1-wrapper {
+    width: 245.55px;
+    margin-top: 35.5px;
+    border-bottom: 1px solid #698198;
+    height: 110px;
+  }
+
+  .zwave-device-detail1-title {
+    font-size : 16px;
+    font-weight:lighter;
+    letter-spacing : 1.8px;
+    color : #ffffff;
+  }
+
+  .zwave-device-detail1-main {
+    font-size : 13px;
+    line-height: 23.5px;
+    font-weight:lighter;
+    letter-spacing : 2.1px;
+    color : #85A2BD;
+    margin-top: 14px;
+    text-align: justify;
+  }
+
+  .led-link {
+    width: 245.55px;
+    height: 61px;
+    background-color:rgba(116,206,226, 0.2);
+    color: #74CEE2;
+    border: none;
+    font-family: Helvetica Neue, Arial;
+    font-size:12.5px;
+    letter-spacing:2.24px;
+    font-weight: lighter;
+    border-radius :10pt;
+    z-index:1;
+    margin-top: 36.2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

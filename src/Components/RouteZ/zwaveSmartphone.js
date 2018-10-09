@@ -3,7 +3,8 @@ import phone from "../../static/zwave-smartphone.png";
 
 const ZwavePhone = () => {
     return (
-     <div className = "zwave-phone-wrapper" style = { styles.phoneWrapper }>
+    <div>
+       <div className = "zwave-phone-wrapper" style = { styles.phoneWrapper }>
          <img
                   src = { phone }
                   className = "zwave-phone"
@@ -61,7 +62,43 @@ const ZwavePhone = () => {
                  </div>
              </div>
            </div>
-     </div>
+       </div>
+       <div className="zwave-phone-wrapper-small">
+           <div
+               className = "zwave-phone-img-wrapper"
+           >
+               <img
+                   src = { phone }
+                   className = "zwave-phone-img"
+                   alt = "zwave-phone-img"
+               />
+           </div>
+           <div className="zwave-phone-main-wrapper">
+               <p className="zwave-phone-main-title">
+                   Z-Wave スマートフォン
+               </p>
+               <p className="zwave-cloud-main-explain">
+                   Z-Waveデバイスの状態の確認やコントロールを遠隔で行うスマートフォン用ソフトウェアです。
+               </p>
+           </div>
+           <div className="zwave-phone-detail1-wrapper">
+               <p className="zwave-phone-detail1-title">
+                   SDK型
+               </p>
+               <p className="zwave-phone-detail1-main">
+                   お客様独自のUIデザインやすでにおもちのアプリケーションで実現したいケースにおいて、SDKの提供が可能です。
+               </p>
+           </div>
+           <div className="zwave-phone-detail2-wrapper">
+               <p className="zwave-phone-detail2-title">
+                   ソリューション型
+               </p>
+               <p className="zwave-phone-detail2-main">
+                   お客様のご要望に応じ、当社でアプリケーションの開発を承ります
+               </p>
+           </div>
+       </div>
+    </div>
     )
 }
 

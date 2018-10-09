@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff3774db-9c3b-4e4f-852b-c39b6d5abfc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Contact/backgroundRectanlge.js" afterPath="$PROJECT_DIR$/src/Components/Contact/backgroundRectanlge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Contact/contact.js" afterPath="$PROJECT_DIR$/src/Components/Contact/contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/KeyVisual/keyVisualImage.js" afterPath="$PROJECT_DIR$/src/Components/KeyVisual/keyVisualImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Product/product.js" afterPath="$PROJECT_DIR$/src/Components/Product/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/routeZ.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/routeZ.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/routez_detail.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/routez_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/routez_menu.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/routez_menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/zwaveCloud.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/zwaveCloud.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Solution/backgroundPentagon.js" afterPath="$PROJECT_DIR$/src/Components/Solution/backgroundPentagon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Solution/solution.js" afterPath="$PROJECT_DIR$/src/Components/Solution/solution.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js" afterPath="$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,23 +36,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routeZ.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routeZ.js">
+          <file leaf-file-name="zwaveDevice.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="753">
-                  <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routez_detail.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routez_detail.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="825">
-                  <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+                <state relative-caret-position="445">
+                  <caret line="73" column="38" lean-forward="false" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -67,11 +48,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="zwaveCloud.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="zwaveCloud.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveCloud.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="559">
-                  <caret line="108" column="10" lean-forward="true" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+                <state relative-caret-position="915">
+                  <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="zwaveHome.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -116,21 +107,9 @@
           <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="1058" column="20" lean-forward="false" selection-start-line="1058" selection-start-column="20" selection-end-line="1058" selection-end-column="20" />
+                <state relative-caret-position="416">
+                  <caret line="1405" column="23" lean-forward="true" selection-start-line="1405" selection-start-column="23" selection-end-line="1405" selection-end-column="23" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/Product/product.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1350">
-                  <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#0#42#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -173,9 +152,6 @@
         <option value="$PROJECT_DIR$/src/Components/Contact/facebook_logo.js" />
         <option value="$PROJECT_DIR$/src/Components/Header/header_detail.js" />
         <option value="$PROJECT_DIR$/src/Components/Common/explainModule.js" />
-        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js" />
-        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js" />
-        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js" />
         <option value="$PROJECT_DIR$/src/Components/RouteZ/routeZ_demo.js" />
         <option value="$PROJECT_DIR$/src/Components/Contact/info.js" />
         <option value="$PROJECT_DIR$/src/Components/Header/logo.js" />
@@ -211,7 +187,10 @@
         <option value="$PROJECT_DIR$/src/Components/RouteZ/routez_detail.js" />
         <option value="$PROJECT_DIR$/src/Components/RouteZ/routez_menu.js" />
         <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveCloud.js" />
+        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js" />
+        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js" />
       </list>
     </option>
   </component>
@@ -271,6 +250,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jlab-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jlab-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,12 +460,12 @@
       <workItem from="1538628060571" duration="4399000" />
       <workItem from="1538666842472" duration="21749000" />
       <workItem from="1538746717510" duration="13863000" />
-      <workItem from="1538994392126" duration="9909000" />
+      <workItem from="1538994392126" duration="14505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224228000" />
+    <option name="totallyTimeSpent" value="228824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -525,11 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/static/lightbulb_detail.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/light_bolb.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -560,27 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="111" column="41" lean-forward="true" selection-start-line="111" selection-start-column="41" selection-end-line="111" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -647,6 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -809,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Product/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Product/backgroundCircle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -853,14 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Common/sectionTitleSmall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -877,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routeZ.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routez_menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -897,27 +841,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routez_detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
+        <state relative-caret-position="1344">
           <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Product/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveSmartphone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="91" column="31" lean-forward="false" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/routeZ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Common/sectionTitleSmall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/zwave_device_small.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveCloud.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="108" column="10" lean-forward="true" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+        <state relative-caret-position="915">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1058" column="20" lean-forward="false" selection-start-line="1058" selection-start-column="20" selection-end-line="1058" selection-end-column="20" />
+        <state relative-caret-position="416">
+          <caret line="1405" column="23" lean-forward="true" selection-start-line="1405" selection-start-column="23" selection-end-line="1405" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/RouteZ/zwaveDevice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="73" column="38" lean-forward="false" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
