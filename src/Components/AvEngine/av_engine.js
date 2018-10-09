@@ -1,12 +1,13 @@
 import React from "react";
 import HeaderDetail from "../Header/header_detail";
 import dawEngine from "../../static/daw_engine.svg";
+import AvEngineSmall from "./av_engine_small";
 
 const AvEngine = () => {
     return (
       <div>
         <HeaderDetail />
-        <section style = { styles.wrapper }>
+        <section style = { styles.wrapper } className="av-engine-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
                     「DRM対応AVプレイヤーエンジン」とは？
@@ -35,6 +36,7 @@ const AvEngine = () => {
                 </p>
             </div>
         </section>
+        <AvEngineSmall />
       </div>
     )
 }

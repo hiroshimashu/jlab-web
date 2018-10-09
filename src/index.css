@@ -406,6 +406,20 @@ a {
 
 
 
+/* ---------------------------------- Recruit ---------------------------------*/
+.recruit-wrapper-small {
+  display: none;
+}
+
+
+
+/* ------------------------------- Mirror ---------------------------------- */
+.mirror-wrapper-small {
+  display: none;
+}
+
+
+
 /* ---------------------------------- Small Screen -------------------------- */
 
 
@@ -1666,6 +1680,242 @@ a {
   }
 
 
+
+  /* --------------------- Recruit ------------------------------------ */
+  .recruit-wrapper {
+    display: none;
+  }
+
+  .recruit-wrapper-small {
+    display: block;
+    width: 232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .recruit-title {
+    width: 202px;
+    font-size : 23px;
+    line-height : 34.5px;
+    letter-spacing : 2.5px;
+    color : #74CEE2;
+    font-weight:lighter;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .recruit-jobs-wrapper {
+    margin-top: 61.35px;
+  }
+
+  .recruit-jobs-title {
+    font-size : 15.5px;
+    line-height : 36px;
+    font-weight: lighter;
+    letter-spacing : 2.7px;
+    color : #85A2BD;
+  }
+
+  .recruit-jobs {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color : #FFFFFF;
+    font-weight: lighter;
+  }
+
+  .required-skills-wrapper {
+    margin-top: 32.5px;
+  }
+  .required-skills-title {
+    font-size : 15.5px;
+    line-height : 36px;
+    font-weight: lighter;
+    letter-spacing : 2.7px;
+    color : #85A2BD;
+  }
+  .required-skills {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color : #FFFFFF;
+    font-weight: lighter;
+  }
+
+  .working-hours-wrapper {
+    margin-top: 32.5px;
+  }
+
+  .working-hours-title {
+    font-size : 15.5px;
+    line-height : 36px;
+    font-weight: lighter;
+    letter-spacing : 2.7px;
+    color : #85A2BD;
+  }
+
+  .working-hours {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color : #FFFFFF;
+    font-weight: lighter;
+  }
+
+  .working-place-wrapper {
+    margin-top: 32.5px;
+  }
+
+  .working-place-title {
+    font-size : 15.5px;
+    line-height : 36px;
+    font-weight: lighter;
+    letter-spacing : 2.7px;
+    color : #85A2BD;
+  }
+
+  .working-place {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color : #FFFFFF;
+    font-weight: lighter;
+  }
+
+  .jobs-info-wrapper {
+    margin-top: 32.5px;
+    width:245.5px;
+  }
+
+  .jobs-info {
+    width: 100%;
+  }
+
+  .address-wrapper {
+    margin-top: 26.73px;
+  }
+
+  .address {
+    font-size : 19.5px;
+    letter-spacing : 3.43px;
+    color : #FFFFFF;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  /* ------------------------ AV-ENGINE ------------------------------ */
+
+  .av-engine-wrapper {
+    display: none;
+  }
+
+  .daw-wrapper-small {
+    display: block;
+    width: 232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .daw-title-small {
+    width: 202px;
+    font-size : 23px;
+    line-height : 34.5px;
+    letter-spacing : 2px;
+    color : #74CEE2;
+    font-weight:lighter;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .daw-main-wrapper {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color :#85A2BD;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .daw-img-wrapper-small {
+    margin-top: 42px;
+    width: 208px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  /* ------------------ Mirror wrapper ----------------------------- */
+  .mirror-wrapper {
+    display: none;
+  }
+
+  .mirror-wrapper-small {
+    display: block;
+    width: 232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mirror-title-small {
+    width: 210px;
+    font-size : 23px;
+    line-height : 34.5px;
+    letter-spacing : 0px;
+    color : #74CEE2;
+    font-weight:lighter;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mirror-main-wrapper {
+    margin-top: 14px;
+    font-size : 10.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color :#85A2BD;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .mirror-img-wrapper-small {
+    position: relative;
+    margin-top: 42px;
+    width:232.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mirror-img-small {
+    margin-top: 20px;
+  }
+
+  .smartphone-small {
+    position: absolute;
+    font-size : 7.5px;
+    line-height : 22.03px;
+    letter-spacing : 0.7px;
+    color :#85A2BD;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  .tv-app-small {
+    position: absolute;
+    font-size : 7.5px;
+    line-height : 22.03px;
+    letter-spacing : 2.1px;
+    color :#85A2BD;
+    left: 155px;
+    font-weight: lighter;
+    text-align: justify;
+  }
 
 
 

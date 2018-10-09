@@ -1,6 +1,7 @@
 import React from "react";
 import jsonInfo from "../../static/jobs_info.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
+import RecruitSmall from "./recruitSmall";
 
 const Recruit = () => {
     return (
@@ -107,6 +108,7 @@ const Recruit = () => {
                 </footer>
             </div>
           </section>
+          <RecruitSmall />
         </div>
     )
 }

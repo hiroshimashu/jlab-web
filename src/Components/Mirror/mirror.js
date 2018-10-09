@@ -1,12 +1,13 @@
 import React from "react";
 import mirror from "../../static/mirror_fix.svg";
 import HeaderDetail from "../../Components/Header/header_detail";
+import MirrorSmall from "./mirrorSmall";
 
 const Mirror = () => {
     return (
         <div>
            <HeaderDetail/>
-           <section style = { styles.wrapper }>
+           <section style = { styles.wrapper } className="mirror-wrapper">
             <div style = { styles.contentWrapper }>
                 <p style = { styles.drmTitle }>
                     「逆ミラーリング」とは
@@ -54,6 +55,7 @@ const Mirror = () => {
                 </p>
             </div>
           </section>
+          <MirrorSmall />
         </div>
     )
 }
